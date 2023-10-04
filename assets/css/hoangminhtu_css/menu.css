@@ -287,6 +287,16 @@ ul {
     fill: transparent;
 }
 
+.item-link:hover .sb-icon-hover {
+    transform: scale(1);
+    fill: currentColor;
+}
+
+.hamburger-button:hover .sb-icon-hover {
+    transform: scale(1);
+    fill: currentColor;
+}
+
 @media screen and (min-width: 789px) {
     .menu-hamburger, .menu-hamburger__mask, .menu-hamburger-button {
         display: none;
@@ -451,7 +461,7 @@ ul {
 /* main content - menu section */
 
 .main-content {
-    padding: 32px 16px;
+    padding: 32px 16px 0 16px;
     flex: 1 1 0;
 }
 
@@ -542,7 +552,204 @@ ul {
     }
 }
 
-/* bottom drawer */
+
+/* footer nav bar wrapper */
+
+@media screen and (min-width: 1024px) {
+    .footer-column-wrapper {
+        display: flex;
+    } 
+}
+
+/* footer column */
+
+.footer-column {
+    display: none;
+}
+
+.footer-column > .footer-column__title {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.footer-column .footer-column__item {
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.footer-column .footer-column__item > .item-link {
+    font-size: 16px;
+    color: #00000094;
+}
+
+.footer-column-wrapper > .footer-column:not(:first-child) {
+    margin-left: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-column {
+        display: block;
+        max-width: 190px;
+        width: 190px;
+    }
+
+    
+}
+
+/* footer */
+
+.footer {
+    padding: 32px 0 150px 0;
+    box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.23);
+}
+
+.footer__nav-bar {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__nav-bar {
+        padding: 0 24px 0 99px;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__nav-bar {
+        padding: 0 40px 0 131px;
+    } 
+}
+
+/* footer column drop down */
+
+@media screen and (min-width: 1024px) {
+    .footer-column-drop-down {
+        display: none;
+    }
+}
+
+/* footer - drop down button */
+
+.drop-down-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    width: 100%;
+    color: #000000de;
+    font-size: 16px;
+}
+
+.drop-down-button > .expander-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+/* footer - drop down expander */
+
+.drop-down-list-expander {
+    position: relative;
+    transition: height .35s ease-in-out;
+}
+
+.drop-down-list-expander-overflow {
+    overflow-y: hidden;
+}
+
+.drop-down-list-expander > .footer-column__list {
+    position: absolute;
+}
+
+
+.drop-down-list-expander .footer-column__item {
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.drop-down-list-expander > .footer-column__list .item-link {
+    font-size: 14px;
+    color: #00000094;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* footer social icon */
+
+.footer__social-links {
+    display: flex;
+}
+
+.social-icon > .item-link {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+/* footer - starbucks terms */
+
+.sb-terms-links {
+    margin-top: 16px;
+}
+
+.term-link {
+    padding: 8px 0;
+    margin-bottom: 4px;
+}
+
+.term-link > .item-link {
+    color: #000000de;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 475px) {
+    .social-icon {
+        margin-right: 4px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sb-terms-links {
+        display: flex;
+        margin: 16px 0 4px 0;
+    }
+
+    .term-link {
+        padding: 0 24px;
+        margin: 0;
+    }
+
+    .term-link > .item-link{
+        font-size: 16px;
+    }
+
+    .term-link:first-child {
+        padding-left: 0;
+    }
+
+    .term-link:not(:first-child) {
+        border-left: 1px solid;
+    }
+}
+
+/* footer - copyright */
+
+.sb-copyright {
+    padding: 16px 0;
+    font-size: 13px;
+    color: #00000094;
+}
+
+@media screen and (min-width: 1024px) {
+    .sb-copyright {
+        font-size: 14px;
+    }
+}
+
+/* bottom drawer fixed position*/
 
 .bottom-drawer {
     position: fixed;
@@ -595,7 +802,7 @@ ul {
     text-transform: lowercase;
 }
 
-.expander-icon {
+.inner-button > .expander-icon {
     width: 18px;
     height: 18px;
     margin-left: 8px;
@@ -640,7 +847,7 @@ ul {
         padding-top: 4px;
     }
 
-    .expander-icon {
+    .inner-button > .expander-icon {
         margin-left: 80px;
     }
 
