@@ -540,5 +540,118 @@ ul {
         font-size: 28px;
         padding-bottom: 48px;
     }
+}
 
+/* bottom drawer */
+
+.bottom-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.drawer-container {
+    background-color: #1e3932;
+    padding: 0 16px;
+    height: 74px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawer-content {
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.drawer-logo {
+    margin: 16px 0 8px 24px;
+}
+
+.inner-button {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #ffffff4d;
+}
+
+.inner-button__text {
+    color: #ffffffb2;
+    font-size: 14px;
+}
+
+.inner-button__text::after {
+    content: ", choose a store";
+    margin: 0;
+    padding: 0;
+}
+
+.inner-button__text > span {
+    text-transform: lowercase;
+}
+
+.expander-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
+
+.cart-img {
+    width: 32px;
+    height: 32px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .drawer-container {
+        padding-left: 99px;
+        height: 94px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .drawer-container {
+        padding-left: 400px;
+        padding-right: 10%;
+    }
+
+    .drawer-content {
+        margin: 24px 0;
+    }
+
+    .inner-button {
+        padding-bottom: 8px;
+    }
+
+    .inner-button__text {
+        font-size: 16px;
+    }
+
+    .inner-button__text::after {
+        content: "Choose a store";
+        display: block;
+        color: white;
+        font-weight: 700;
+        padding-top: 4px;
+    }
+
+    .expander-icon {
+        margin-left: 80px;
+    }
+
+    .drawer-logo {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .drawer-container {
+        padding-right: 20%;
+    }
 }
