@@ -674,7 +674,13 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-    
+    .drop-down-button {
+        font-size: 19px;
+    }
+
+    .drop-down-list-expander > .footer-column__list .item-link {
+        font-size: 16px;
+    }
 }
 
 /* footer social icon */
