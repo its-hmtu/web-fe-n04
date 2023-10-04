@@ -69,15 +69,15 @@ Array.from(dropDownButton).forEach(button => {
     const svg = button.children[1];
     var height = list.clientHeight;
     
-    if (dropDownExpander.style.height === height + 'px') {
-        dropDownExpander.style.height = 0 + 'px';
+    if (dropDownExpander.style.height === 0 + 'px') {
+        svg.style.transform = 'rotate(180deg)';
+        dropDownExpander.style.height = height + 'px';
         dropDownExpander.classList.add('drop-down-list-expander-toggle');
-        svg.style.transform = 'rotate(0deg)';
     }
     else {
-        dropDownExpander.style.height = height + 'px';
+        svg.style.transform = 'rotate(0deg)';
+        dropDownExpander.style.height = 0 + 'px';
         ropDownExpander.classList.remove('drop-down-list-expander-toggle');
-        svg.style.transform = 'rotate(180deg)';
     }
   });
 });
