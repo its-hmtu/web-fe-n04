@@ -6,5 +6,6 @@
 - Ưu tiên đặt class chuẩn BEM - Block__element-modify -> tênclassthẻcha__tênthẻcon-đặcđiểmcủathẻcon. Vd: header__group-list-left (header = tên class thẻ cha; __group-list: tên thẻ con; -left: đặc điểm của thẻ con)
   ![image](https://github.com/its-hmtu/web-fe-n04/assets/96937508/3cfea1b8-ba83-4f16-b623-7d3ac2c61972)
 
-- Mỗi người tạo 1 folder riêng để chứa nguyên file html. Folder để tên của mình (vd: hoang_minh_tu_html).
+- Mỗi người tạo 1 folder riêng để chứa nguyên file css. Folder để tên của mình (vd: hoang_minh_tu_css). JS tương tự
+- File html để cùng level với index.
 
