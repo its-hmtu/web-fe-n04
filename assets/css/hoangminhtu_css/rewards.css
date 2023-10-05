@@ -465,7 +465,7 @@ ul {
 /* main content - img background */
 
 .background-img-cover {
-    background-image: url(/assets/img/rewards-big.webp);
+    background-image: url(./img/rewards-big.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -534,7 +534,7 @@ ul {
 
 @media screen and (min-width: 768px) {
     .background-img-cover {
-        background-image: url(/assets/img/background-img-768.webp);
+        background-image: url(./img/background-img-768.webp);
         background-size: auto 100%;
         background-position: 50%;
         background-color: #d4e9e2;
