@@ -707,6 +707,7 @@ ul {
     .term-link {
         padding: 0 24px;
         margin: 0;
+        text-align: center;
     }
 
     .term-link > .item-link{
