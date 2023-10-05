@@ -102,7 +102,7 @@ ul {
     fill: transparent;
 }
 
-/*  header  */
+/* header */
 
 .header {
     position: relative;
@@ -133,10 +133,10 @@ ul {
         width: 40px;
         height: 40px;
     }
-    
+
     .list-flex {
         height: 72px;
-    }
+    }   
 }
 
 @media screen and (min-width: 768px){
@@ -169,6 +169,22 @@ ul {
     }
 }
 
+@media screen and (min-width: 1520px){
+    .nav-bar-wrapper {
+        padding: 0;
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1702px) {
+    .brand-logo {
+        position: absolute;
+        right: 100%;
+    }    
+}
+
 .link-list-container {
     display: flex;
     flex-grow: 1;
@@ -180,7 +196,6 @@ ul {
     .link-list-container {
         justify-content: space-between;
     }
-    
 }
 
 /* menu hamburger button */
@@ -366,42 +381,44 @@ ul {
 
 /* sub nav-bar */
 
-.sub-navbar-items {
-    display: flex;
-}
 
 .sub-navbar {
-    background-color: #f9f9f9;
-    border: 1px solid #dbd9d7;
+    background-color: #1e3932;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 0 16px;
-    
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.25);
 }
 
-.sub-navbar-item {
-    padding: 16px 0;
-    margin-right: 16px;
-    position: relative;
+.sub-navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
-.sub-navbar-item > .item-link {
+
+.sub-navbar__title {
     font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    flex-basis: 50%;
 }
 
-.sub-navbar-item:first-child > .item-link::after {
-    content: "";
-    width: 100%;
-    border-bottom: 1px solid ;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
+.sub-navbar-link {
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 16px;
+    border-color: #fff;
+    font-weight: 600;
 }
 
-@media screen and (min-width: 475px) {
-    .sub-navbar-item {
-        margin-right: 32px; 
-    }
+.sub-navbar-link:hover {
+    background-color: rgba(0, 0, 0, .2)
 }
 
 @media screen and (min-width: 768px) {
@@ -409,162 +426,94 @@ ul {
         padding-right: 24px;
         padding-left: 99px;
     }
+
+    .sub-navbar-link {
+        display: none;
+    }
+
+    .sub-navbar__title {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .sub-navbar {
         padding-right: 40px;
         padding-left: 131px;
-        position: sticky;
-        top: 0;
     }
 }
 
-/* main content - content container*/
+@media screen and (min-width: 1520px) {
+    .sub-navbar {
+        padding: 0;
+    }
 
-.content-container {
+    .sub-navbar-inner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+/* main content - img background */
+
+.background-img-cover {
+    background-image: url(/assets/img/rewards-big.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-inner {
     display: flex;
+   
 }
 
-@media screen and (min-width: 768px) {
-    .content-container {
-        padding-left: 99px;
-    }
+.section-inner__text {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
-    .content-container {
-        padding-left: 131px;
-    }
+.background-img-cover .section-title {
+    max-width: 155px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000de;
 }
 
-/* main content - aside navbar */
-
-.aside-navbar {
-    padding: 16px 0;
+.background-img-cover .section-sub-title {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #000000de;
 }
 
-.aside-navbar .section-item {
-    margin-top: 24px;
+.background-img-cover .section-links {
+    margin-top: 32px;
 }
 
-.list-item {
-    margin: 16px 0;
-}
-
-.section-title {
-    font-size: 19px;
+.background-img-cover .section-links > .item-bp {
+    display: inline-block;
+    border: 0;
+    color: #fff;
+    background-color: #00754a;
+    font-size: 14px;
     font-weight: 600;
 }
 
-.list-item > .item-link {
-    font-size: 16px;
-    color: #00000094;
-}
-
-.aside {
-    display: none;
-}
-
-@media screen and (min-width: 1024px) {
-    .aside {
-        display: block;
-        flex-basis: 150px;
-    }
-}
-
-/* main content - menu section */
-
-.main-content {
-    padding: 32px 16px 0 16px;
-    flex: 1 1 0;
-}
-
-.content-heading {
-    padding-bottom: 24px;
-    font-size: 20px;
-}
-
-.section-items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.main-content .section-title {
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    margin-bottom: 32px;
-    font-size: 19px;
-}
-
-.section .section-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.section-item > .thumb-art {
-    max-width: 72px; 
-    overflow: hidden;
-    margin-right: 16px;
-}
-  
-.section-item > .thumb-art img {
-    border-radius: 50%; 
-}
-
-.item-title > .item-link {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-/* .section > .line-break {
-    padding-top: 0;
-}
-
-.section > .line-break::before {
-    content: "";
+.background-img-cover .section-links > .item-link {
     display: block;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-} */
-
-@media screen and (min-width: 768px) {
-    .main-content {
-        padding-left: 0px;
-    }
-
-    .section-items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .item-title > .item-link {
-        font-size: 19px;
-    }
-
-    .content-heading {
-        font-size: 28px;
-        padding-bottom: 32px;
-    }
-
-    .main-content .section-title{
-        font-size: 24px;
-        font-weight: 700;
-    }
+    color: #000000de;
+    font-size: 16px;
+    margin-top: 16px;
+    text-decoration: underline;
 }
 
-@media screen and (min-width: 1024px){
-    .main-content {
-        padding: 40px 10% 0px 119px;
-    }
-
-    .section-item > .thumb-art {
-        max-width: 112px; 
-    }
-
-    .content-heading {
-        font-size: 28px;
-        padding-bottom: 48px;
-    }
+.float-left {
+    float: left;
+    width: 0;
+    padding-bottom: 133%;
 }
 
 
@@ -773,119 +722,5 @@ ul {
 @media screen and (min-width: 1024px) {
     .sb-copyright {
         font-size: 14px;
-    }
-}
-
-/* bottom drawer fixed position*/
-
-.bottom-drawer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.drawer-container {
-    background-color: #1e3932;
-    padding: 0 16px;
-    height: 74px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.drawer-content {
-    width: 100%;
-    margin: 16px 0;
-    display: flex;
-    align-items: center;
-}
-
-.drawer-logo {
-    margin: 16px 0 8px 24px;
-}
-
-.inner-button {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #ffffff4d;
-}
-
-.inner-button__text {
-    color: #ffffffb2;
-    font-size: 14px;
-}
-
-.inner-button__text::after {
-    content: ", choose a store";
-    margin: 0;
-    padding: 0;
-}
-
-.inner-button__text > span {
-    text-transform: lowercase;
-}
-
-.inner-button > .expander-icon {
-    width: 18px;
-    height: 18px;
-    margin-left: 8px;
-}
-
-.cart-img {
-    width: 32px;
-    height: 32px;
-    
-}
-
-@media screen and (min-width: 768px) {
-    .drawer-container {
-        padding-left: 99px;
-        height: 94px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .drawer-container {
-        padding-left: 400px;
-        padding-right: 10%;
-    }
-
-    .drawer-content {
-        margin: 24px 0;
-    }
-
-    .inner-button {
-        padding-bottom: 8px;
-    }
-
-    .inner-button__text {
-        font-size: 16px;
-    }
-
-    .inner-button__text::after {
-        content: "Choose a store";
-        display: block;
-        color: white;
-        font-weight: 700;
-        padding-top: 4px;
-    }
-
-    .inner-button > .expander-icon {
-        margin-left: 80px;
-    }
-
-    .drawer-logo {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .drawer-container {
-        padding-right: 20%;
     }
 }
