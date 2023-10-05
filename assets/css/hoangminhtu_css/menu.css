@@ -625,13 +625,13 @@ ul {
 
 @media screen and (min-width: 768px) {
     .footer__nav-bar {
-        padding: 0 24px 0 99px;
+        padding: 0 24px 0 24px;
     } 
 }
 
 @media screen and (min-width: 1024px) {
     .footer__nav-bar {
-        padding: 0 40px 0 131px;
+        padding: 0 40px 0 40px;
     } 
 }
 
