@@ -216,19 +216,26 @@ ul {
     fill: currentColor;
 }
 
-.sb-hamburgerButton-topLine-OPEN {
+.hb-top-OPEN {
     transform: translateY(330%) rotate(-45deg);
+    /* transition: transform 0.35s ease-in-out; */
 }
 
-.sb-hamburgerButton-bottomLine-OPEN {
+.hb-bottom-OPEN {
     transform: translateY(calc(-1 * 330%)) rotate(-135deg);  
+    /* transition: transform 0.35s ease-in-out; */
 }
 
-.sb-hamburgerButton-middleLine-OPEN {
+.hb-mid-OPEN {
     opacity: 0;
+    transition: opacity 0.35s ease-in-out;
 }
 
-.sb-hamburgerButton-animation-outer-lines {
+.hb-animation {
+    transition: transform 0.35s ease-in-out;
+}
+
+.hb-animation-outer-lines {
     transform-box: fill-box;
     transform-origin: center;
 }

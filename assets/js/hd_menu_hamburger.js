@@ -26,28 +26,36 @@ menuClose = () => {
     mask.toggleClass('hidden');
     body.css("overflow", "auto");
 
-    sb_middle.removeClass("sb-hamburgerButton-middleLine-OPEN");
-    sb_middle.addClass("sb-hamburgerButton-middleLine-CLOSED");
+    // sb_middle.removeClass("sb-hamburgerButton-middleLine-OPEN");
+    // sb_middle.addClass("sb-hamburgerButton-middleLine-CLOSED");
 
-    sb_top.removeClass("sb-hamburgerButton-topLine-OPEN");
-    sb_top.addClass("sb-hamburgerButton-topLine-CLOSED");
+    // sb_top.removeClass("sb-hamburgerButton-topLine-OPEN");
+    // sb_top.addClass("sb-hamburgerButton-topLine-CLOSED");
 
-    sb_bottom.removeClass("sb-hamburgerButton-bottomLine-OPEN");
-    sb_bottom.addClass("sb-hamburgerButton-bottomLine-CLOSED");
+    // sb_bottom.removeClass("sb-hamburgerButton-bottomLine-OPEN");
+    // sb_bottom.addClass("sb-hamburgerButton-bottomLine-CLOSED");
+
+    sb_middle.toggleClass("hb-mid-OPEN");
+    sb_top.toggleClass("hb-top-OPEN");
+    sb_bottom.toggleClass("hb-bottom-OPEN");
 }
 
 menuOpen = () => {
     mask.toggleClass('hidden');
     body.css("overflow-y", "hidden");
 
-    sb_middle.removeClass("sb-hamburgerButton-middleLine-CLOSED");
-    sb_middle.addClass("sb-hamburgerButton-middleLine-OPEN");
+    // sb_middle.removeClass("sb-hamburgerButton-middleLine-CLOSED");
+    // sb_middle.addClass("sb-hamburgerButton-middleLine-OPEN");
 
-    sb_top.removeClass("sb-hamburgerButton-topLine-CLOSED");
-    sb_top.addClass("sb-hamburgerButton-topLine-OPEN");
+    // sb_top.removeClass("sb-hamburgerButton-topLine-CLOSED");
+    // sb_top.addClass("sb-hamburgerButton-topLine-OPEN");
 
-    sb_bottom.removeClass("sb-hamburgerButton-bottomLine-CLOSED");
-    sb_bottom.addClass("sb-hamburgerButton-bottomLine-OPEN");
+    // sb_bottom.removeClass("sb-hamburgerButton-bottomLine-CLOSED");
+    // sb_bottom.addClass("sb-hamburgerButton-bottomLine-OPEN");
+
+    sb_middle.toggleClass("hb-mid-OPEN");
+    sb_top.toggleClass("hb-top-OPEN");
+    sb_bottom.toggleClass("hb-bottom-OPEN");
 }
 
 // var buttonHamburger = document.querySelector('.hamburger-button');
