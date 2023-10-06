@@ -10,7 +10,9 @@ var menu = $(".menu-hamburger");
 var sb_middle = $("#sb-closed-middle-line");
 var sb_top = $("#sb-closed-top-line");
 var sb_bottom = $("#sb-closed-bottom-line");
-var body = $(body);
+var body = $("body");
+
+console.log(body);
 
 hamburgerButton = () => {
     button.click(() => {
