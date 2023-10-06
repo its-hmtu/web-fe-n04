@@ -15,6 +15,7 @@ dropDown = () => {
         var dropDownListExpander = button.parent().siblings('.drop-down-list-expander');
         var list = dropDownListExpander.children();
         var svg = button.children()[1];
+        svg.style.transition = 'transform 0.35s ease-in-out';
 
         if (dropDownListExpander.height() === 0) {
             svg.style.transform = 'rotate(180deg)';

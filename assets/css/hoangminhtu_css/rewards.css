@@ -796,6 +796,7 @@ ul {
     width: 100%;
     padding: 8px 8px 16px 8px;
     position: relative;
+    color: #000000de;
 }
 .item-button__text {
     position: relative;
