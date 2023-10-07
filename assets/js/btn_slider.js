@@ -1,8 +1,5 @@
 // @ Hoang Minh Tu - 21011638
-$(document).ready(function() {
-    const buttons = $('.item-button');
-    const slider = $('.button-slider');
-    var images = ['25', '100', '200', '300', '400'];
+var images = ['25', '100', '200', '300', '400'];
     var titles = [
         'Customize your drink',
         'Brewed hot or iced coffee of tea, bakery item, packaged snack and more',
@@ -17,6 +14,9 @@ $(document).ready(function() {
         'Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.',
         'Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.'
     ];
+$(document).ready(function() {
+    const buttons = $('.item-button');
+    const slider = $('.button-slider');
     
     var currentButton = buttons[0];
     buttons.click(function() {
