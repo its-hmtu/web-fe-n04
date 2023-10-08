@@ -8,19 +8,25 @@ $(document).ready(() => {
     var currentButton = buttons[0];
     var currentThumbnail = thumbnails[0];
     currentThumbnail = $(currentThumbnail);
-    currentThumbnail.toggleClass('thumb-nail-visible');
+    currentThumbnail.removeClass('thumb-nail-invisible');
+    currentThumbnail.addClass('thumb-nail-visible');
 
+    currentButton = $(currentButton);
+    slider.css('left', currentButton.offset().left + 'px');
     buttons.click(function() {
         currentButton = $(this);
         slider.css('left', currentButton.offset().left + 'px');
     
-        var totalPadding = parseInt(currentButton.css('padding-left')) + 
-                   parseInt(currentButton.css('padding-right'));
+        // var totalPadding = parseInt(currentButton.css('padding-left')) + 
+        //            parseInt(currentButton.css('padding-right'));
 
-        slider.css('width', (currentButton.width() + totalPadding) + 'px' );
+        // slider.css('width', (currentButton.width() + totalPadding) + 'px' );
 
-        currentThumbnail.toggleClass('thumb-nail-visible');
+        currentThumbnail.removeClass('thumb-nail-visible');
+        currentThumbnail.addClass('thumb-nail-invisible');
+
         currentThumbnail = $(thumbnails[currentButton.index()]);
-        currentThumbnail.toggleClass('thumb-nail-visible');
+        currentThumbnail.removeClass('thumb-nail-invisible');
+        currentThumbnail.addClass('thumb-nail-visible');
     });
 });
