@@ -438,6 +438,7 @@ ul {
     width: 100%;
     justify-content: space-around;
     position: relative;
+    margin: 0 auto;
 }
 .section-3 .item-button {
     width: 100%;
@@ -477,10 +478,6 @@ ul {
     position: relative;
 }
 
-.section-3 .thumb-nail-row {
-    flex-direction: column;
-}
-
 .thumb-nail-invisible {
     position: absolute;
     top:0;
@@ -495,7 +492,7 @@ ul {
 .thumb-nail-visible {
     opacity: 1;
     visibility: visible;
-    animation: fadeIn .20s ease-in ;
+    animation: fadeIn .15s ease-in ;
 }
 
 @keyframes fadeIn {
@@ -548,9 +545,44 @@ ul {
 @media screen and (min-width: 768px){
     .section-3 .section-title {
         font-size: 28px;
+        padding-bottom: 48px;
     }  
+
+    .section-3 .thumb-nail-container__inner {
+        padding-bottom: 0px;
+    }
+
+    .section-3 .thumb-art {
+        max-width: 375px;
+        margin-right: 48px;
+        padding: 0;
+    }
+
+    .relative {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 0;
+    }
 
     .section-3 .button-row {
         max-width: 540px;
+    }
+
+    .section-3 .item-button__text {
+        font-size: 24px;
+    }
+
+    .section-3 .thumb-nail-text {
+        text-align: left;
+        max-width: 375px;
+    }
+
+    .section-3 .thumb-nail__title {
+        font-size: 24px;
+    }
+
+    .section-3 .thumb-nail__description {
+        font-size: 16px;
     }
 }
