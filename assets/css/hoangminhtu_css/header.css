@@ -19,7 +19,7 @@
     margin: 16px 16px 16px 0;
 }
 
-.nav-bar-wrapper {
+.nav-bar-inner {
     padding: 0 16px;
 }
 
@@ -45,7 +45,7 @@
         margin-right: 24px;
     }
     
-    .nav-bar-wrapper {
+    .nav-bar-inner {
         padding: 0 24px;
     }
     
@@ -63,13 +63,13 @@
         height: 99px;
     }
 
-    .nav-bar-wrapper {
+    .nav-bar-inner {
         padding: 0 40px;
     }
 }
 
 @media screen and (min-width: 1520px){
-    .nav-bar-wrapper {
+    .nav-bar-inner {
         padding: 0;
         max-width: 1440px;
         margin: 0 auto;
@@ -77,14 +77,14 @@
     }
 }
 
-.link-list-container {
+.link-container {
     flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
 }
 
 @media screen and (min-width: 789px){
-    .link-list-container {
+    .link-container {
         justify-content: space-between;
     }
 }
@@ -118,7 +118,7 @@
 
 /* menu hamburger button */
 
-.menu-hamburger-button {
+.menu-button {
     width: 44px;
     height: 100%;
     position: relative;
@@ -162,7 +162,7 @@
 
 /* menu hamburger mask - menu hamburger */
 
-.menu-hamburger__mask {
+.menu-mask {
     background: #000;
     opacity: 0.38;
     position: fixed;
@@ -184,7 +184,7 @@
     transition: right .3s ease-in-out;
 }
 
-.menu-hamburger-toggle {
+.menu-toggle {
     right: 0!important;
 }
 
@@ -201,7 +201,7 @@
 }
 
 @media screen and (min-width: 375px){
-    .menu-hamburger__mask {
+    .menu-mask {
         top: 72px;
         height: calc(100% - 72px);
     }
@@ -213,7 +213,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .menu-hamburger__mask {
+    .menu-mask {
         top: 83px;
         height: calc(100% - 83px);
     }
@@ -225,19 +225,19 @@
 }
 
 @media screen and (min-width: 789px) {
-    .menu-hamburger, .menu-hamburger__mask, .menu-hamburger-button {
+    .menu-hamburger, .menu-mask, .menu-button {
         display: none;
     }
 }
 
-.menu-hamburger__item > .item-link {
+.menu-item > .item-link {
     padding: 16px 32px;
     display: block;
     font-size: 19px;
 }
 
 @media screen and (min-width: 768px) {
-    .menu-hamburger__item > .item-link {
+    .menu-item > .item-link {
         padding: 16px 32px;
         display: block;
         font-size: 24px;
@@ -259,16 +259,16 @@
         align-items: center;
     }
 
-    .link-list-container {
+    .link-container {
         align-items: normal;
     }
 
-    .nav-bar__left-item {
+    .left-item {
         align-items: center;
     }
 }
 
-.nav-bar__left-item .item-link {
+.left-item .item-link {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;

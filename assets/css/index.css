@@ -49,7 +49,7 @@ ul {
     margin: 32px auto;
 }
 
-.inner-content-container {
+.content-container-inner {
     background-color: #006241;
 }
 
@@ -58,13 +58,13 @@ ul {
     align-items: center;
 }
 
-.banner-title-content {
+.banner-text-content {
     justify-content: center;
     align-items: center;
     padding: 32px 16px; 
 }
 
-.banner-title-content__inner > * {
+.banner-text-content__inner > * {
     color: white;
 }
 
@@ -156,7 +156,7 @@ ul {
         width: 50%;
     }
 
-    .banner-title-content {
+    .banner-text-content {
         padding: 32px 24px;
         flex-basis: 50%;
     }
@@ -173,13 +173,13 @@ ul {
         font-size: 19px;
     }
 
-    .banner-title-content__inner {
+    .banner-text-content__inner {
         max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .banner-title-content {
+    .banner-text-content {
         padding: 32px 40px;
     }
 
@@ -189,7 +189,7 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
-    .banner-title-content {
+    .banner-text-content {
         padding: 32px 48px;
     }
 }

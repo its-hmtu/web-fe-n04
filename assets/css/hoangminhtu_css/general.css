@@ -1,5 +1,9 @@
 
 /* general class */
+.grid {
+    display: grid;
+}
+
 .flex {
     display: flex;
 }

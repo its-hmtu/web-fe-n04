@@ -4,7 +4,7 @@ $(document).ready(() => {
     hamburgerButton();
 });
 
-var mask = $(".menu-hamburger__mask");
+var mask = $(".menu-mask");
 var button = $(".hamburger-button");
 var menu = $(".menu-hamburger");
 var sb_middle = $("#sb-closed-middle-line");
@@ -16,7 +16,7 @@ console.log(body);
 
 hamburgerButton = () => {
     button.click(() => {
-        menu.toggleClass('menu-hamburger-toggle') ? menuOpen() : menuClose();
+        menu.toggleClass('menu-toggle') ? menuOpen() : menuClose();
     });
 }
 

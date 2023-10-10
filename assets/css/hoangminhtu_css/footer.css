@@ -45,23 +45,23 @@
 
 /* footer column */
 
-.footer-column > .footer-column__title {
+.footer-column > .column-title {
     font-size: 19px;
     font-weight: 400;
     margin-bottom: 24px;
 }
 
-.footer-column .footer-column__item {
+.footer-column .list-item {
     padding: 8px 0;
     margin-bottom: 8px;
 }
 
-.footer-column .footer-column__item > .item-link {
+.footer-column .list-item > .item-link {
     font-size: 16px;
     color: #00000094;
 }
 
-.footer-column .footer-column__item > .item-link:hover {
+.footer-column .list-item > .item-link:hover {
     color: #000000de;
 }
 
@@ -80,7 +80,7 @@
 
 
 @media screen and (min-width: 1024px) {
-    .footer-column-drop-down-wrapper {
+    .column-drop-down-wrapper {
         display: none;
     }
 }
@@ -105,25 +105,25 @@
 
 /* footer - drop down expander */
 
-.drop-down-list-expander {
+.list-expander {
     position: relative;
     transition: height .35s ease-in-out;
 }
 
-.drop-down-list-expander-overflow {
+.list-expander-overflow {
     overflow-y: hidden;
 }
 
-.drop-down-list-expander > .footer-column__list {
+.list-expander > .column-list {
     position: absolute;
 }
 
-.drop-down-list-expander .footer-column__item {
+.list-expander .list-item {
     padding: 8px 0;
     margin-bottom: 8px;
 }
 
-.drop-down-list-expander > .footer-column__list .item-link {
+.list-expander > .column-list .item-link {
     font-size: 14px;
     color: #00000094;
 }
@@ -133,7 +133,7 @@
         font-size: 19px;
     }
 
-    .drop-down-list-expander > .footer-column__list .item-link {
+    .list-expander > .column-list .item-link {
         font-size: 16px;
     }
 }
@@ -159,7 +159,7 @@
 
 /* footer - starbucks terms */
 
-.sb-terms-links {
+.footer__terms {
     margin-top: 16px;
 }
 
@@ -174,7 +174,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .sb-terms-links {
+    .footer__terms {
         display: flex;
         margin: 16px 0 4px 0;
     }
@@ -198,14 +198,14 @@
 
 /* footer - copyright */
 
-.sb-copyright {
+.footer__copyright {
     padding: 16px 0;
     font-size: 13px;
     color: #00000094;
 }
 
 @media screen and (min-width: 1024px) {
-    .sb-copyright {
+    .footer__copyright {
         font-size: 14px;
     }
 }

@@ -38,7 +38,7 @@ ul {
 
 /* header */
 @media screen and (min-width: 1520px){
-    .nav-bar-wrapper {
+    .nav-bar-inner {
         padding: 0 40px;
         max-width: unset;
         margin: unset;
