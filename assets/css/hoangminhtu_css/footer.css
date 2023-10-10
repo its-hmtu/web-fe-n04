@@ -1,0 +1,211 @@
+/* @ Hoang Minh Tu - 21011638 */
+/* --- FOOTER --- */
+
+/* footer */
+
+.footer {
+    padding: 32px 0 150px 0;
+    box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.23);
+}
+
+.footer__nav-bar {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__nav-bar {
+        padding: 0 24px 0 24px;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__nav-bar {
+        padding: 0 40px 0 40px;
+    } 
+}
+
+@media screen and (min-width: 1520px) {
+    .footer__nav-bar {
+        padding: 0;
+        max-width: 1440px;
+        margin: 0 auto;
+    } 
+}
+
+/* footer nav bar wrapper */
+.footer-column-wrapper {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-column-wrapper {
+        display: flex;
+    } 
+}
+
+/* footer column */
+
+.footer-column > .column-title {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.footer-column .list-item {
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.footer-column .list-item > .item-link {
+    font-size: 16px;
+    color: #00000094;
+}
+
+.footer-column .list-item > .item-link:hover {
+    color: #000000de;
+}
+
+.footer-column-wrapper > .footer-column:not(:first-child) {
+    margin-left: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-column {
+        max-width: 190px;
+        width: 190px;
+    }
+}
+
+/* footer column drop down */
+
+
+@media screen and (min-width: 1024px) {
+    .column-drop-down-wrapper {
+        display: none;
+    }
+}
+
+/* footer - drop down button */
+
+.drop-down-button {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    width: 100%;
+    color: #000000de;
+    font-size: 16px;
+}
+
+.drop-down-button > .expander-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+/* footer - drop down expander */
+
+.list-expander {
+    position: relative;
+    transition: height .35s ease-in-out;
+}
+
+.list-expander-overflow {
+    overflow-y: hidden;
+}
+
+.list-expander > .column-list {
+    position: absolute;
+}
+
+.list-expander .list-item {
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+.list-expander > .column-list .item-link {
+    font-size: 14px;
+    color: #00000094;
+}
+
+@media screen and (min-width: 768px) {
+    .drop-down-button {
+        font-size: 19px;
+    }
+
+    .list-expander > .column-list .item-link {
+        font-size: 16px;
+    }
+}
+
+/* footer social icon */
+
+.social-icon > .item-link {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.item-link:hover .sb-icon-hover {
+    transform: scale(1);
+    fill: currentColor;
+}
+
+@media screen and (min-width: 475px) {
+    .social-icon {
+        margin-right: 4px;
+    }
+}
+
+/* footer - starbucks terms */
+
+.footer__terms {
+    margin-top: 16px;
+}
+
+.term-link {
+    padding: 8px 0;
+    margin-bottom: 4px;
+}
+
+.term-link > .item-link {
+    color: #000000de;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__terms {
+        display: flex;
+        margin: 16px 0 4px 0;
+    }
+
+    .term-link {
+        padding: 0 24px;
+        margin: 0;
+        text-align: center;
+        border-left: 1px solid;
+    }
+
+    .term-link > .item-link{
+        font-size: 16px;
+    }
+
+    .item-no-pb-left {
+        padding-left: 0;
+        border: 0;
+    }
+}
+
+/* footer - copyright */
+
+.footer__copyright {
+    padding: 16px 0;
+    font-size: 13px;
+    color: #00000094;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
