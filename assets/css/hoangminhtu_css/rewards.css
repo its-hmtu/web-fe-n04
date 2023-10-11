@@ -16,6 +16,7 @@ a {
 
 body {
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 body, h1, h2, h3, h4, h5, h6, span, p {
@@ -194,7 +195,7 @@ ul {
 }
 
 .section .item-bp:hover {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: #006241;
 }
 
 .section .item-link:hover {
@@ -667,11 +668,11 @@ ul {
     flex-grow: 1;
 }
 
-.grid-item-text {
+.section-5 .grid-item-text {
     padding-bottom: 32px;
 }
 
-.grid-item-title {
+.section-5 .grid-item-title {
     font-size: 19px;
     font-weight: 600;
 }
@@ -680,28 +681,28 @@ ul {
     font-size: 16px;
 }
 
-.grid-item-description {
+.section-5 .grid-item-description {
     font-size: 14px;
 }
 
-.thumb-nail-border-bottom {
+.section-5 .thumb-nail-border-bottom {
     padding: 0 0 48px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .grid-item-thumb-nail {
+    .section-5 .grid-item-thumb-nail {
         display: flex;
     }
 
-    .grid-item:first-child{
+    .section-5 .grid-item:first-child{
         padding-bottom: 24px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         margin-bottom: 48px;
     }
 
-    .thumb-nail-border-bottom {
+    .section-5 .thumb-nail-border-bottom {
         padding: 0;
         border: 0;
         margin: 0;
@@ -726,7 +727,7 @@ ul {
         text-align: left;
     }
 
-    .grid-item-title {
+    .section-5 .grid-item-title {
         font-size: 24px;
         font-weight: 600;
     }
@@ -735,7 +736,7 @@ ul {
         font-size: 19px;
     }
     
-    .grid-item-description {
+    .section-5 .grid-item-description {
         font-size: 16px;
     }
 }
@@ -749,7 +750,7 @@ ul {
         padding: 0 32px 0 0;
     }
 
-    .grid-item-thumb-nail {
+    .section-5 .grid-item-thumb-nail {
         flex-basis: 80%;
         flex-grow: 1;
     }
@@ -785,7 +786,7 @@ ul {
     padding-bottom: 8px;
 }
 
-.section-inner__text {
+.section-6 .section-inner__text {
     flex-direction: column;
 }
 
@@ -816,7 +817,7 @@ ul {
 .section-6 .thumb-art {
     padding: 0;
     margin: 0 auto;
-    width: 75%;
+    max-width: 200px;
 }
 
 .section-6 .thumb-nail-text, .section-6 .thumb-nail-description {
@@ -827,7 +828,37 @@ ul {
     margin: 24px 0 8px;
 }
 
+@media screen and (min-width: 768px) {
+    .section-6 .section-inner__text {
+        flex-direction: row;
+        align-items: center;
+        background-color: #d4e9e2;
+        padding: 40px 0;
+    }
+
+    .section-6 .section-inner {
+        background-image: url(./img/background-img-section-6.webp);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .star-background {
+        background-image: url(./svg/star-img-768.svg);
+        padding: 18% 10%;
+        align-self: center;
+    }
+
+    .section-6 .section-sub-title {
+        padding: 0 48px;
+    }
+}
+
 /* section 7 */
+.section-7 .section-inner__text {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .section-7 .text-content {
     text-align: left;
 }
@@ -841,5 +872,85 @@ ul {
     vertical-align: bottom;
 }
 
+/* section 8 */
+
+.section-8 .section-inner {
+    background-color: #f9f9f9;
+}
+
+.section-8 .section-inner__text {
+    padding-top: 32px;
+}
+
+.section-8 .section-sub-title {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.section-8 .section-sub-title p {
+    padding-bottom: 8px;
+    font-size: 13px;
+}
+
+.section-8 .item-link {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.item-link-no-flex {
+    display: unset!important;
+}
+
+.grid-column {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.section-8 .grid-item-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00000094;
+    padding-bottom: 16px;
+}
+
+.section-8 .item-description-text {
+    font-size: 13px;
+    padding-bottom: 16px;
+}
+
+.section-8 .item-no-pb {
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-column {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+
+    .section-8 .section-sub-title p,
+    .section-8 .item-description-text,
+    .section-8 .item-link,
+    .section-8 .grid-item-title{
+        font-size: 14px;
+    }
+    
+    .section-8 .grid-item {
+        padding-bottom: 0px;
+    }
+
+    .section-8 .section-inner__text {
+        padding: 48px 0;
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .section-8 .section-inner__text {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
 
 
