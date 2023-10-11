@@ -907,6 +907,10 @@ ul {
     grid-template-columns: repeat(1, 1fr);
 }
 
+.section-8 .grid-item {
+    padding-bottom: 32px;
+}
+
 .section-8 .grid-item-title {
     font-size: 13px;
     font-weight: 700;
