@@ -9,7 +9,7 @@
 }
 
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 .item-link {
@@ -52,4 +52,8 @@
     transform-origin: center;
     transform: scale(.4);
     fill: transparent;
+}
+
+.container {
+    position: relative;
 }
