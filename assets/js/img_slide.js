@@ -12,6 +12,7 @@ var ffImgButton = document.querySelector("#ffImgButton");
 var mask = document.querySelector('.slide-dialog-mask');
 // select body
 const body1 = $('body');
+var container1 = $('.container')
 
 let currentIndex = 0;
 
@@ -80,7 +81,7 @@ close.addEventListener("click", () => {
   container.classList.add("hidden");
   // set body overflow to auto
   body1.css('overflow', 'auto');
-
+  container1.css('padding-right', '0px');
 });
 
 
@@ -90,20 +91,24 @@ ffImgButton.addEventListener('click', handleClick);
 function handleClick() {
     container.classList.remove('hidden');
     body1.css('overflow', 'hidden');
+    container1.css('padding-right', '17px');
 }
 
 function handleClick(e) {
     e.preventDefault();
     container.classList.remove('hidden');
     body1.css('overflow', 'hidden');
+    container1.css('padding-right', '17px');
 }
 
 mask.addEventListener('click', () => {
     container.classList.add('hidden');
     body1.css('overflow', 'auto');
+    container1.css('padding-right', '0px');
 });
 
 closeOk.addEventListener('click', () => {
     container.classList.add('hidden');
     body1.css('overflow', 'auto');
+    container1.css('padding-right', '0px');
 });

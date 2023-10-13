@@ -972,7 +972,8 @@ ul {
     height: 100%;
 }
 .slide-dialog-container
-{
+{   
+    max-width: 420px;
     position: fixed;
     top: 50%;
     right: 0;
@@ -1062,6 +1063,12 @@ ul {
 .active {
     background-color: #1e3932;
     opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .slide-dialog-container {
+        margin: 0 auto;
+    }
 }
 
 
