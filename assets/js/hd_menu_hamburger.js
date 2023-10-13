@@ -31,7 +31,7 @@ menuClose = () => {
 
 menuOpen = () => {
     mask.toggleClass('hidden');
-    body.css("overflow-y", "hidden");
+    body.css("overflow", "hidden");
 
     sb_middle.toggleClass("hb-mid-OPEN");
     sb_top.toggleClass("hb-top-OPEN");
