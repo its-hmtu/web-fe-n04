@@ -31,7 +31,6 @@ ul {
     list-style: none;
 }
 
-/* tổng hợp */
 .location{
     display: flex;
     align-items: center;
@@ -41,7 +40,7 @@ ul {
     width: 32px;
     padding: 0px 8px 0px 0px;
 }
-    /* button hover */
+
 .sign-in {
     margin: 0 16px 0 0;
 }
@@ -57,22 +56,6 @@ ul {
     background-color: rgba(0, 0, 0, .7);
 }
 
-.find-examples:hover {
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.read-stories:hover {
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.see-how:hover {
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.learn-more:hover {
-    background-color: rgba(0, 0, 0, .1);
-}
-
 .item-discoloration{
     padding: 7px 16px;
     border-radius: 50px;
@@ -82,9 +65,9 @@ ul {
     transition: all .2s ease;
 }
 
-    /* <---> */
-
-    /* text hover */
+.change:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
 
 .item-hover-green:hover {
     color: #00754a;
@@ -92,17 +75,6 @@ ul {
 .item-hover-black:hover{
     color: black;
 }
-.item-term-link:hover{
-    text-decoration: underline;
-}
-    /* <---> */
-
-/* .line-break {
-    border: 0;
-    margin: 0;
-    padding: 32px 0px;
-    border-top: 2px solid rgba(0, 0, 0, .1);
-} */
 
 .sb-icon-hover {
     transition: all .2s ease-out;
@@ -112,9 +84,7 @@ ul {
     fill: transparent;
 }
 
-/* <---> */
-
-/* header */
+/*header*/
 .header {
     position: relative;
     z-index: 3;
@@ -138,8 +108,6 @@ ul {
 }
 
 .list-item{
-    /* width:1440px;
-    height:99px; */
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -186,27 +154,32 @@ ul {
 .location-icon {
     margin: 0 40px 0 0;
 }
-/* <---> */
+/*<--->*/
 
 /* main page */
+.main{
+    box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.17);
+}
 .main-content{
     width:1857px;
-    height:214.5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-content-big{  
+    width: 1440px;
     padding: 32px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content-medium{   
+    width: 864px;
     padding:0px 48px;
-    text-align: center;
 }
-
-.content-block{
+.main-content-block{
     color:rgb(30, 57, 50);
     font-size: 50px;
     text-align: center;
@@ -222,28 +195,35 @@ ul {
     letter-spacing: -0.16px;
     line-height: 33.25px;
     padding-top: 24px;
-    margin: 0px 500px;
+}
+.main-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change{
+    margin-top: 32px;
 }
 
-
-.main-inclusion-diversity-inner{
+.main-2030-commitments-inner{
     width: 1857px;
     height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
 }
-.inclusion-diversity-img{
+.news-2030-commitments-img{
     width: 720px;
     height: 420px;
 }
-.inclusion-diversity-title{
+.news-2030-commitments-title{
     width: 720px;
     height: 420px;
     background-color: rgb(212, 233, 226);
     padding: 32px 48px;
 }
-.inclusion-diversity-title-inner{
+.news-2030-commitments-title-inner{
     width: 518px;
     height: 227px;
     margin-top: 10%;
@@ -260,136 +240,41 @@ ul {
     font-weight: 400;
     line-height: 33.25px;
 }
-.find-examples{
-    color: rgb(30, 57, 50);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.2px;
-    padding: 7px 16px;
-    margin-top: 32px;
-}
 
-.main-opportunity-inner{
-    width: 1857px;
-    height: 420px;
+.block-target5{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 32px 0px;
 }
-.opportunity-img{
+.target5-img{
     width: 720px;
-    height: 420px;
+    height: 280px;  
 }
-.opportunity-title{
+.target5-content{
     width: 720px;
-    height: 420px;
-    background-color: rgb(212, 233, 226);
+    height: 280px;
     padding: 32px 48px;
-}
-.opportunity-title-inner{
-    width: 518px;
-    height: 227px;
-    margin-top: 10%;
-}
-.read-stories{
-    color: rgb(30, 57, 50);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.2px;
-    padding: 7px 16px;
-    margin-top: 32px;
-}
-
-.main-community-inner{
-    width: 1857px;
-    height: 420px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
-.community-img{
-    width: 720px;
-    height: 420px;
-}
-.community-title{
-    width: 720px;
-    height: 420px;
-    background-color: rgb(212, 233, 226);
-    padding: 32px 48px;
-}
-.community-title-inner{
-    width: 518px;
-    height: 227px;
-    margin-top: 10%;
-}
-.see-how{
-    color: rgb(30, 57, 50);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.2px;
-    padding: 7px 16px;
-    margin-top: 32px;
-}
-
-.main-content{
-    width:1857px;
-    height:214.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content-under-big{  
-    padding: 32px 0px;
-}
-
-.main-content-under-medium{   
-    padding:0px 48px;
-    text-align: center;
-}
-
-.content-under-block{
+.target5-content-inner{
+    width: 517.91px;
     color:rgb(30, 57, 50);
-    font-size: 50px;
-    text-align: center;
-    line-height: 60px;
-    letter-spacing: 8px;
-}
-
-.main-title-under-block{
-    color:rgb(30, 57, 50);
-    font-size: 19px;
-    font-family: SoDoSans "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
     letter-spacing: -0.16px;
-    line-height: 33.25px;
-    padding-top: 24px;
-    margin: 0px 500px;
+    line-height: 36px;
 }
+/*<--->*/
 
-.learn-more{
-    color:rgb(30, 57, 50);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600px;
-    font-family: "SoDoSans", Arial, Helvetica, sans-serif;
-    letter-spacing: -0.16px;
-    line-height: 19.2px;
-    margin-top: 32px;
-}
-
-.main{
-    box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.17);
-}
-/* <---> */
-
-/* footer */
+/*footer*/
 .footer-column-list{
     display: flex;
     width: 1440px ;
     height: 388.5px;
     font-size: 16px;
-    /* justify-content: center; */
     font-weight: 400;
     letter-spacing: -0.16px;
     line-height: 24px;
@@ -459,6 +344,9 @@ ul {
     line-height: 24px;
     letter-spacing: -0.16px;
 }
+.item-term-link:hover{
+    text-decoration: underline;
+}
 .term-link:not(:first-child){
     padding-left: 24px;
     border-left: 2px solid #00000094;
@@ -471,6 +359,5 @@ ul {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-
 }
 /*<--->*/
