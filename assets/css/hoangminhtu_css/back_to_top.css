@@ -1,0 +1,46 @@
+@import url('./general.css');
+
+.back-to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 0px; /* Initial position outside the screen */
+    transform: translatex(-20%);
+    transition: transform 0.2s ease-in-out; /* Smooth transition when changing the right property */
+    z-index: 9;
+}
+
+.back-to-top .back-top-up-arrow{
+    vertical-align: top;
+    fill: #fff;
+}
+
+.back-to-top .item-bp {
+    border: 0;
+    background-color: #00754a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+}
+
+.back-to-top .item-bp:hover {
+    background-color: #006241;
+}
+
+@media screen and (min-width: 1280px) {
+    .back-to-top .item-bp::before {
+        content: 'Back to top';
+    } 
+
+    .back-to-top .item-bp {
+        padding: 8px 16px;
+    }
+    
+}
