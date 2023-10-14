@@ -27,6 +27,7 @@ button {
     border: 0;
     background: 0;
     cursor: pointer;
+    color: #000000de;
 }
 
 img {
@@ -1048,6 +1049,14 @@ ul {
     font-size: 14px;
 }
 
+.slide-control-close-ok:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.slide-control-close-ok:active {
+    transform: scale(.95);
+}
+
 .slide-control-blank {
     width: 48px;
     height: 48px;
@@ -1063,6 +1072,15 @@ ul {
 .active {
     background-color: #1e3932;
     opacity: 1;
+}
+
+.slide-control-arrow:hover .sb-icon-hover {
+    transform: scale(1);
+    fill: currentColor;
+}
+
+.slide-control-arrow:active .sb-icon-hover {
+    transform: scale(.65);
 }
 
 @media screen and (min-width: 768px) {

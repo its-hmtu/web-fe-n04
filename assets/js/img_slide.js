@@ -1,20 +1,67 @@
 var container = document.querySelector(".slide-container");
 var thumbnails = document.querySelectorAll(".slide-container .thumb-nail");
 
-var leftClick = document.querySelector("#slideArrowLeft");
-var rightClick = document.querySelector("#slideArrowRight");
+var leftClick = document.querySelector(".arrow-left");
+var rightClick = document.querySelector(".arrow-right");
 var dots = document.querySelectorAll(".slide-control-dot");
 var blank = document.querySelector(".slide-control-blank");
-var closeOk = document.querySelector("#slideCloseOk");
-var close = document.querySelector("#slideClose");
-var ffImg = document.querySelector("#ffImg");
-var ffImgButton = document.querySelector("#ffImgButton");
+var closeOk = document.querySelector(".slide-control-close-ok");
+var close = document.querySelector(".slide-control-close");
 var mask = document.querySelector('.slide-dialog-mask');
+var imgs = document.querySelectorAll('.section-4 img');
+var thumbnailContainers = document.querySelectorAll('.slide-item .thumb-nail-container');
+console.log(imgs);
+console.log(thumbnailContainers);
 // select body
-const body1 = $('body');
-var container1 = $('.container')
 
+const body1 = $('body');
+var container1 = $('.container');
+var currentImg = 0;
 let currentIndex = 0;
+
+imgs.forEach((img) => {
+  img.addEventListener("click", (e) => {
+   // get current index of clicked image
+    currentImg = Array.from(imgs).indexOf(e.target);
+    // remove hidden on slideItems with currentImg index
+    container.classList.remove('hidden');
+    thumbnailContainers[currentImg].classList.remove('hidden');
+    if (currentImg === 1) {
+      dots[dots.length - 1].classList.add('hidden');
+      console.log(currentIndex);
+    } else {
+      dots[dots.length - 1].classList.remove('hidden');
+    }
+  });
+});
+
+close.addEventListener("click", () => {
+  container.classList.add("hidden");
+  // set body overflow to auto
+  body1.css('overflow', 'auto');
+  thumbnailContainers[currentImg].classList.add('hidden');
+  currentIndex = 0;
+  currentImg = 0;
+  updateSlide();
+});
+
+mask.addEventListener('click', () => {
+    container.classList.add('hidden');
+    body1.css('overflow', 'auto');
+    thumbnailContainers[currentImg].classList.add('hidden');
+    currentIndex = 0;
+    currentImg = 0;
+    updateSlide();
+});
+
+closeOk.addEventListener('click', () => {
+    container.classList.add('hidden');
+    body1.css('overflow', 'auto');
+    thumbnailContainers[currentImg].classList.add('hidden');
+    currentIndex = 0;
+    currentImg = 0;
+    updateSlide();
+});
 
 leftClick.addEventListener("click", () => {
   currentIndex--;
@@ -56,6 +103,11 @@ function updateArrows() {
     rightClick.classList.remove("hidden");
     closeOk.classList.add("hidden");
   }
+
+  if (currentImg === 1 && currentIndex === 1) {
+    rightClick.classList.add("hidden");
+    closeOk.classList.remove("hidden");
+  }
 }
 
 dots.forEach((dot) => {
@@ -66,7 +118,7 @@ dots.forEach((dot) => {
     // Get clicked dot index
     const clickedIndex = Array.from(dots).indexOf(e.target);
 
-    // Update current index
+    // Update current indexS
     currentIndex = clickedIndex;
 
     // Add active class to clicked dot
@@ -77,38 +129,4 @@ dots.forEach((dot) => {
   });
 });
 
-close.addEventListener("click", () => {
-  container.classList.add("hidden");
-  // set body overflow to auto
-  body1.css('overflow', 'auto');
-  container1.css('padding-right', '0px');
-});
 
-
-ffImg.addEventListener('click', handleClick);
-ffImgButton.addEventListener('click', handleClick);
-
-function handleClick() {
-    container.classList.remove('hidden');
-    body1.css('overflow', 'hidden');
-    container1.css('padding-right', '17px');
-}
-
-function handleClick(e) {
-    e.preventDefault();
-    container.classList.remove('hidden');
-    body1.css('overflow', 'hidden');
-    container1.css('padding-right', '17px');
-}
-
-mask.addEventListener('click', () => {
-    container.classList.add('hidden');
-    body1.css('overflow', 'auto');
-    container1.css('padding-right', '0px');
-});
-
-closeOk.addEventListener('click', () => {
-    container.classList.add('hidden');
-    body1.css('overflow', 'auto');
-    container1.css('padding-right', '0px');
-});
