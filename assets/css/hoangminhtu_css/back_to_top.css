@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 5%;
     right: 0px; /* Initial position outside the screen */
-    transform: translatex(-20%);
+    transform: translatex(150%);
     transition: transform 0.2s ease-in-out; /* Smooth transition when changing the right property */
     z-index: 9;
 }

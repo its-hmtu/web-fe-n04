@@ -535,13 +535,13 @@ ul {
     right: 0;
     opacity: 0;
     visibility: hidden;
-    animation: fadeOut .05s ease-out;
+    animation: fadeOut .2s ease-out;
 }
 
 .thumb-nail-visible {
     opacity: 1;
     visibility: visible;
-    animation: fadeIn .15s ease-in ;
+    animation: fadeIn .35s ease-in ;
 }
 
 @keyframes fadeIn {
