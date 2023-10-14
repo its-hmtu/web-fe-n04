@@ -17,7 +17,7 @@ console.log(imgButtons);
 // select body
 
 const body1 = $('body');
-var container1 = $('.container');
+
 var currentImg = 0;
 let currentIndex = 0;
 
@@ -35,10 +35,10 @@ function handleClick() {
   currentImg = Array.from(imgs).indexOf(this);
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
+  body1.css('overflow', 'hidden');
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
-    console.log(currentIndex);
   } else {
     dots[dots.length - 1].classList.remove('hidden');
   }
@@ -49,10 +49,10 @@ function handleClickButton() {
   currentImg = Array.from(imgButtons).indexOf(this);
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
+  body1.css('overflow', 'hidden');
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
-    console.log(currentIndex);
   } else {
     dots[dots.length - 1].classList.remove('hidden');
   }
