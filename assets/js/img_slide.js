@@ -16,8 +16,6 @@ console.log(thumbnailContainers);
 console.log(imgButtons);
 // select body
 
-const body1 = $('body');
-
 var currentImg = 0;
 let currentIndex = 0;
 
@@ -35,7 +33,7 @@ function handleClick() {
   currentImg = Array.from(imgs).indexOf(this);
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
-  body1.css('overflow', 'hidden');
+  body.toggleClass('overflow-hidden');
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
@@ -49,7 +47,7 @@ function handleClickButton() {
   currentImg = Array.from(imgButtons).indexOf(this);
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
-  body1.css('overflow', 'hidden');
+  body.toggleClass('overflow-hidden');
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
@@ -61,7 +59,7 @@ function handleClickButton() {
 close.addEventListener("click", () => {
   container.classList.add("hidden");
   // set body overflow to auto
-  body1.css('overflow', 'auto');
+  body.toggleClass('overflow-hidden');
   thumbnailContainers[currentImg].classList.add('hidden');
   currentIndex = 0;
   currentImg = 0;
@@ -70,7 +68,7 @@ close.addEventListener("click", () => {
 
 mask.addEventListener('click', () => {
     container.classList.add('hidden');
-    body1.css('overflow', 'auto');
+    body.toggleClass('overflow-hidden');
     thumbnailContainers[currentImg].classList.add('hidden');
     currentIndex = 0;
     currentImg = 0;
@@ -79,7 +77,7 @@ mask.addEventListener('click', () => {
 
 closeOk.addEventListener('click', () => {
     container.classList.add('hidden');
-    body1.css('overflow', 'auto');
+    body.toggleClass('overflow-hidden');
     thumbnailContainers[currentImg].classList.add('hidden');
     currentIndex = 0;
     currentImg = 0;

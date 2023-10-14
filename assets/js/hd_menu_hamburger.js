@@ -4,7 +4,7 @@ $(document).ready(() => {
     hamburgerButton();
 });
 
-var mask = $(".menu-mask");
+var menu_mask = $(".menu-mask");
 var button = $(".hamburger-button");
 var menu = $(".menu-hamburger");
 var sb_middle = $("#sb-closed-middle-line");
@@ -12,30 +12,33 @@ var sb_top = $("#sb-closed-top-line");
 var sb_bottom = $("#sb-closed-bottom-line");
 var body = $("body");
 
-console.log(body);
+var isOpen = false;
 
 hamburgerButton = () => {
     button.click(() => {
-        menu.toggleClass('menu-toggle') ? menuOpen() : menuClose();
+        menu.toggleClass('menu-toggle');
+        (isOpen) ? menuOpen() : menuClose();
     });
 }
 
 menuClose = () => {
-    mask.toggleClass('hidden');
-    body.css("overflow", "auto");
+    menu_mask.toggleClass('hidden');
+    body.toggleClass("overflow-hidden");
 
     sb_middle.toggleClass("hb-mid-OPEN");
     sb_top.toggleClass("hb-top-OPEN");
     sb_bottom.toggleClass("hb-bottom-OPEN");
+    isOpen = false;
 }
 
 menuOpen = () => {
-    mask.toggleClass('hidden');
-    body.css("overflow", "hidden");
+    menu_mask.toggleClass('hidden');
+    body.toggleClass("overflow-hidden");
 
     sb_middle.toggleClass("hb-mid-OPEN");
     sb_top.toggleClass("hb-top-OPEN");
     sb_bottom.toggleClass("hb-bottom-OPEN");
+    isOpen = true;
 }
 
 // var buttonHamburger = document.querySelector('.hamburger-button');

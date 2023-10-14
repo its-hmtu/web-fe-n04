@@ -12,6 +12,10 @@
     display: none!important;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .item-link {
     color: #000000de;
     font-size: 14px;
