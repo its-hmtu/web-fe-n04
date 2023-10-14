@@ -9,9 +9,11 @@ var closeOk = document.querySelector(".slide-control-close-ok");
 var close = document.querySelector(".slide-control-close");
 var mask = document.querySelector('.slide-dialog-mask');
 var imgs = document.querySelectorAll('.section-4 img');
+var imgButtons = document.querySelectorAll('.section-4 .item-link');
 var thumbnailContainers = document.querySelectorAll('.slide-item .thumb-nail-container');
 console.log(imgs);
 console.log(thumbnailContainers);
+console.log(imgButtons);
 // select body
 
 const body1 = $('body');
@@ -19,21 +21,42 @@ var container1 = $('.container');
 var currentImg = 0;
 let currentIndex = 0;
 
-imgs.forEach((img) => {
-  img.addEventListener("click", (e) => {
-   // get current index of clicked image
-    currentImg = Array.from(imgs).indexOf(e.target);
-    // remove hidden on slideItems with currentImg index
-    container.classList.remove('hidden');
-    thumbnailContainers[currentImg].classList.remove('hidden');
-    if (currentImg === 1) {
-      dots[dots.length - 1].classList.add('hidden');
-      console.log(currentIndex);
-    } else {
-      dots[dots.length - 1].classList.remove('hidden');
-    }
-  });
+imgs.forEach((item) => {
+  item.addEventListener("click", handleClick);
 });
+
+imgButtons.forEach((item) => {
+  item.removeAttribute('href');
+  item.addEventListener("click", handleClickButton);
+});
+
+function handleClick() {
+  // get current index of clicked image
+  currentImg = Array.from(imgs).indexOf(this);
+    // remove hidden on slideItems with currentImg index
+  container.classList.remove('hidden');
+  thumbnailContainers[currentImg].classList.remove('hidden');
+  if (currentImg === 1) {
+    dots[dots.length - 1].classList.add('hidden');
+    console.log(currentIndex);
+  } else {
+    dots[dots.length - 1].classList.remove('hidden');
+  }
+}
+
+function handleClickButton() {
+  // get current index of clicked image
+  currentImg = Array.from(imgButtons).indexOf(this);
+    // remove hidden on slideItems with currentImg index
+  container.classList.remove('hidden');
+  thumbnailContainers[currentImg].classList.remove('hidden');
+  if (currentImg === 1) {
+    dots[dots.length - 1].classList.add('hidden');
+    console.log(currentIndex);
+  } else {
+    dots[dots.length - 1].classList.remove('hidden');
+  }
+}
 
 close.addEventListener("click", () => {
   container.classList.add("hidden");

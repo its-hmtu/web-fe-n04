@@ -1087,6 +1087,14 @@ ul {
     .slide-dialog-container {
         margin: 0 auto;
     }
+
+    .slide-heading {
+        font-size: 19px;
+    }
+    
+    .slide-description {
+        font-size: 16px;
+    }
 }
 
 
