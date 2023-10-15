@@ -116,6 +116,7 @@ ul {
 @media screen and (min-width: 1024px){
     .heading-container {
         padding: 48px 40px 0;
+        max-width: 550px;
     }
 }
 
@@ -123,8 +124,24 @@ ul {
 
 .form-container {
     padding: 0 16px;
-    margin-bottom: 64px;
     max-width: 525px;
+    margin: 0 auto 64px;
+}
+
+@media screen and (min-width: 768px){
+    .form-container {
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.17);
+    }
+    .form-container form{
+        padding: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .form-container {
+        max-width: 550px;
+    }
 }
 
 .field-set-wrapper {
@@ -137,9 +154,23 @@ ul {
     font-weight: 600;
 }
 
+@media screen and (min-width: 768px){
+    .field-set__heading {
+        font-size: 19px;
+    }
+}
+
 .field-set {
-    margin-bottom: 24px;
-    padding: 8px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.m0-field-set {
+    margin-top: 32px;
+    margin-bottom: 0;
 }
 
 .input-field {
@@ -151,15 +182,23 @@ ul {
     margin: 24px 0;
     position: relative;
     display: flex;
-    transition: all .2s linear;
+    transition: all .2s ease-in-out;
 }
 
 .input-field__label {
     position: absolute;
-    z-index: 2;
-    transition: transform .2s ease-in;
+    transition: transform .2s ease-in-out;
     padding: 0 8px;
     left: 12px;
+}
+
+.input-field:focus~.input-field__label {
+    transform: translateY(-50%);
+    top: -10%;
+    left: 12px;
+    font-size: 13px;
+    background-color: white;
+    color:#00704a
 }
 
 .m8-field {
@@ -167,7 +206,14 @@ ul {
 }
 
 .input-field-description {
-    margin-left: 16px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    .input-field-description {
+        font-size: 16px;
+    } 
 }
 
 .input-field__input {
@@ -178,13 +224,6 @@ ul {
     font-size: 16px;
     font-family: "SoDo Sans", Arial, Helvetica, sans-serif;
 }  
-
-.field-status {
-    position: absolute;
-    top: 50px;
-    transition: height .35s ease-in-out;
-    
-}
 
 .field-status_inner {
     display: flex;
@@ -206,8 +245,6 @@ ul {
 }
 
 .input-field__label-focus {
-    position: absolute;
-    z-index: 2;
     transform: translateY(-50%);
     top: -10%;
     left: 12px;
@@ -225,4 +262,135 @@ ul {
 .input-field__fail {
     border: 2px solid #d62b1f;
     transition: all .2s linear;
+}
+
+
+.card-rewards-expander {
+    font-size: 14px;
+    font-weight: 600;
+    color: #006241;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px){
+    .card-rewards-expander {
+        font-size: 16px;
+    } 
+}
+
+.card-rewards-expander:hover {
+    text-decoration: none;
+}
+
+.card-rewards-expander .expander-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.m0-description {
+    margin: 0;
+}
+
+.card-rewards-expander-container {
+    position: relative;
+    
+    transition: height .35s ease-in-out;
+}
+
+.card-rewards-expander-container .input-fields {
+    position: absolute;
+    
+}
+
+.uppercase-heading {
+    padding-top: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #00000094;
+    margin-bottom: 16px;
+}
+
+.field-set-description {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px){
+    .field-set-description {
+        font-size: 16px;
+    } 
+}
+
+.p0-field {
+    padding: 0 0 40px 0;
+    margin: 0;
+}
+
+.checkbox-field {
+    align-items: flex-start;
+}
+
+input[type="checkbox"] {
+    accent-color: #00754a;
+}
+
+.input-field__input-checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.input-field__label-checkbox {
+    padding-left: 10px;
+    font-size: 14px;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 768px){
+    .input-field__label-checkbox {
+        font-size: 16px;
+    }
+}
+
+.label-check-box-description {
+    margin-top: 16px;
+    color: #00000094;
+}
+
+.input-field__label-checkbox .item-link {
+    display: inline-flex;
+    align-items: center;
+    color: #00754a;
+    text-decoration: underline;
+}
+
+.input-field__label-checkbox .item-link:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .input-field__label-checkbox .item-link {
+        font-size: 16px;
+    }
+}
+
+.submit-button-wrapper {
+    justify-content: flex-end;
+}
+
+.submit-button {
+    padding: 18px 24px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.17);
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    background-color: #00754a; 
+}
+
+.submit-button:hover {
+    background-color: #006241;
 }
