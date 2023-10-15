@@ -51,32 +51,40 @@
                                         First Name
                                     </label>
                                     <input type="text" name="firstName" id="firstName" class="input-field__input">
-                                    <div class="field-status">
-                                        <span class="field-status_inner hidden">
-                                            <svg aria-hidden="true" class="field-status__icon" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 20px; height: 20px; overflow: visible; fill: currentcolor;"><path d="M9.1005 3H14.8995C15.4299 3 15.9386 3.21071 16.3137 3.58579L20.4142 7.68629C20.7893 8.06136 21 8.57007 21 9.1005L21 14.8995C21 15.4299 20.7893 15.9386 20.4142 16.3137L16.3137 20.4142C15.9386 20.7893 15.4299 21 14.8995 21H9.10051C8.57007 21 8.06136 20.7893 7.68629 20.4142L3.58579 16.3137C3.21071 15.9386 3 15.4299 3 14.8995V9.10051C3 8.57007 3.21071 8.06136 3.58579 7.68629L7.68629 3.58579C8.06136 3.21071 8.57007 3 9.1005 3ZM16.7071 7.29289C16.3166 6.90237 15.6834 6.90237 15.2929 7.29289L12 10.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L10.5858 12L7.29289 15.2929C6.90237 15.6834 6.90237 16.3166 7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L12 13.4142L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L13.4142 12L16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289Z"></path></svg>
-                                            Enter your first name
-                                        </span>
-                                    </div>
                                 </div>
                                 
-    
                                 <div class="input-field">
                                     <label for="lastName" class="input-field__label">
                                         <span class="light-green">*</span>
                                         Last Name
                                     </label>
                                     <input type="text" name="lastName" id="lastName" class="input-field__input">
-                                    <div class="field-status">
-                                        <span class="field-status_inner hidden">
-                                            <svg aria-hidden="true" class="field-status__icon" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 20px; height: 20px; overflow: visible; fill: currentcolor;"><path d="M9.1005 3H14.8995C15.4299 3 15.9386 3.21071 16.3137 3.58579L20.4142 7.68629C20.7893 8.06136 21 8.57007 21 9.1005L21 14.8995C21 15.4299 20.7893 15.9386 20.4142 16.3137L16.3137 20.4142C15.9386 20.7893 15.4299 21 14.8995 21H9.10051C8.57007 21 8.06136 20.7893 7.68629 20.4142L3.58579 16.3137C3.21071 15.9386 3 15.4299 3 14.8995V9.10051C3 8.57007 3.21071 8.06136 3.58579 7.68629L7.68629 3.58579C8.06136 3.21071 8.57007 3 9.1005 3ZM16.7071 7.29289C16.3166 6.90237 15.6834 6.90237 15.2929 7.29289L12 10.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L10.5858 12L7.29289 15.2929C6.90237 15.6834 6.90237 16.3166 7.29289 16.7071C7.68342 17.0976 8.31658 17.0976 8.70711 16.7071L12 13.4142L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L13.4142 12L16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289Z"></path></svg>
-                                            Enter your last name
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
                         </fieldset>
                         
-                        <fieldset class="field-set"></fieldset>
+                        <fieldset class="field-set">
+                            <h2 class="field-set__heading">Account Security</h2>
+                            <div class="input-fields">
+                                <div class="input-field m8-field">
+                                    <label for="email" class="input-field__label">
+                                        <span class="light-green">*</span>
+                                        Email Address
+                                    </label>
+                                    <input type="text" name="email" id="email" class="input-field__input">
+                                    
+                                </div>
+                                <p class="input-field-description">This will be your username</p>
+                                <div class="input-field m8-field">
+                                    <label for="password" class="input-field__label ">
+                                        <span class="light-green">*</span>
+                                        Password
+                                    </label>
+                                    <input type="text" name="password" id="password" class="input-field__input">
+                                </div>
+                                <p class="input-field-description">Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</p>
+                            </div>
+                        </fieldset>
                     </div>
                 </form>
             </div>
@@ -84,150 +92,158 @@
 
         <footer class="footer">
             <nav class="footer__nav-bar">
-                <div class="footer__nav-bar-wrapper">
-                    <div class="footer-column-drop-down-wrapper">
-                        <div class="footer-column-drop-down">
-                            <h2 class="footer-column__title">
-                                <button class="drop-down-button">
+                <div class="footer__nav-bar-inner">
+                    <div class="column-drop-down-wrapper">
+                        <div class="column-drop-down">
+                            <h2 class="column-title">
+                                <button class="drop-down-button flex">
                                     <span>About Us</span>
-                                    <svg aria-hidden="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path></svg>
+                                    <svg aria-hidden="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24">
+                                        <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                                    </svg>
                                 </button>
                             </h2>
-                            <div class="drop-down-list-expander drop-down-list-expander-overflow">
-                                <ul class="footer-column__list">
-                                    <li class="footer-column__item"><a href="" class="item-link">Our Company</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Our Coffee</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Stories and News</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Starbucks Archive</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Investor Relations</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Customer Service</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Contact Us</a></li>
+                            <div class="list-expander list-expander-overflow">
+                                <ul class="column-list">
+                                    <li class="list-item"><a href="" class="item-link">Our Company</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Our Coffee</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Stories and News</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Starbucks Archive</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Investor Relations</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Customer Service</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Contact Us</a></li>
                                 </ul>
                              
                             </div>
                         </div>
-                        <div class="footer-column-drop-down">
-                            <h2 class="footer-column__title">
-                                <button class="drop-down-button">
+                        <div class="column-drop-down">
+                            <h2 class="column-title">
+                                <button class="drop-down-button flex">
                                     <span>Careers</span>
-                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path></svg>
+                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24">
+                                        <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                                    </svg>
                                 </button>
                             </h2>
-                            <div class="drop-down-list-expander drop-down-list-expander-overflow">
-                                <ul class="footer-column__list">
-                                    <li class="footer-column__item"><a href="" class="item-link">Culture and Values</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Inclusion, Diversity, and Equity</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">College Achievement Plan</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Alumni Community</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">U.S. Careers</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">International Careers</a></li>
+                            <div class="list-expander list-expander-overflow">
+                                <ul class="column-list">
+                                    <li class="list-item"><a href="" class="item-link">Culture and Values</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Inclusion, Diversity, and Equity</a></li>
+                                    <li class="list-item"><a href="" class="item-link">College Achievement Plan</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Alumni Community</a></li>
+                                    <li class="list-item"><a href="" class="item-link">U.S. Careers</a></li>
+                                    <li class="list-item"><a href="" class="item-link">International Careers</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="footer-column-drop-down">
-                            <h2 class="footer-column__title">
-                                <button class="drop-down-button">
+                        <div class="column-drop-down">
+                            <h2 class="column-title">
+                                <button class="drop-down-button flex">
                                     <span>Social Impact</span>
-                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path></svg>
+                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24">
+                                        <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                                    </svg>
                                 </button>
                             </h2>
-                            <div class="drop-down-list-expander drop-down-list-expander-overflow">
-                                <ul class="footer-column__list">
-                                    <li class="footer-column__item"><a href="" class="item-link">People</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Planet</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Environmental and Social Impact Reporting</a></li>
+                            <div class="list-expander list-expander-overflow">
+                                <ul class="column-list">
+                                    <li class="list-item"><a href="./people.html" class="item-link">People</a></li>
+                                    <li class="list-item"><a href="./planet.html" class="item-link">Planet</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Environmental and Social Impact Reporting</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="footer-column-drop-down">
-                            <h2 class="footer-column__title">
-                                <button class="drop-down-button">
+                        <div class="column-drop-down">
+                            <h2 class="column-title">
+                                <button class="drop-down-button flex">
                                     <span>For Business Partners</span>
-                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path></svg>
+                                    <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24">
+                                        <path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path>
+                                    </svg>
                                 </button>
                             </h2>
-                            <div class="drop-down-list-expander drop-down-list-expander-overflow">
-                                <ul class="footer-column__list">
-                                    <li class="footer-column__item"><a href="" class="item-link">Landlord Support Center</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Suppliers</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Corporate Gift Card Sales</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Office and Foodservice Coffee</a></li>
+                            <div class="list-expander list-expander-overflow">
+                                <ul class="column-list">
+                                    <li class="list-item"><a href="" class="item-link">Landlord Support Center</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Suppliers</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Corporate Gift Card Sales</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Office and Foodservice Coffee</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="footer-column-drop-down">
-                            <h2 class="footer-column__title">
-                                <button class="drop-down-button">
+                        <div class="column-drop-down">
+                            <h2 class="column-title">
+                                <button class="drop-down-button flex">
                                     <span>Order and Pick Up</span>
                                     <svg aria-hidden="true" class="expander-icon" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.96 15.5c-.206 0-.402-.084-.546-.232l-5.188-5.33c-.3-.31-.3-.81 0-1.12.3-.31.79-.31 1.093 0l4.64 4.767 4.723-4.853c.3-.31.79-.31 1.09 0 .303.31.303.812.002 1.122l-5.27 5.414c-.145.148-.34.232-.546.232"></path></svg>
                                 </button>
                             </h2>
-                            <div class="drop-down-list-expander drop-down-list-expander-overflow ">
-                                <ul class="footer-column__list">
-                                    <li class="footer-column__item"><a href="" class="item-link">Order on the App</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Order on the Web</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Delivery</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Order and Pick Up Options</a></li>
-                                    <li class="footer-column__item"><a href="" class="item-link">Explore and Find Coffee for Home</a></li>
+                            <div class="list-expander list-expander-overflow ">
+                                <ul class="column-list">
+                                    <li class="list-item"><a href="" class="item-link">Order on the App</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Order on the Web</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Delivery</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Order and Pick Up Options</a></li>
+                                    <li class="list-item"><a href="" class="item-link">Explore and Find Coffee for Home</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer-column-wrapper">
                         <div class="footer-column">
-                            <h2 class="footer-column__title">About Us</h2>
-                            <ul class="footer-column__list">
-                                <li class="footer-column__item"><a href="" class="item-link">Our Company</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Our Coffee</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Stories and News</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Starbucks Archive</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Investor Relations</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Customer Service</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Contact Us</a></li>
+                            <h2 class="column-title">About Us</h2>
+                            <ul class="column-list">
+                                <li class="list-item"><a href="./Our_Company.html" class="item-link">Our Company</a></li>
+                                <li class="list-item"><a href="./Our_Coffee.html" class="item-link">Our Coffee</a></li>
+                                <li class="list-item"><a href="" class="item-link">Stories and News</a></li>
+                                <li class="list-item"><a href="" class="item-link">Starbucks Archive</a></li>
+                                <li class="list-item"><a href="" class="item-link">Investor Relations</a></li>
+                                <li class="list-item"><a href="" class="item-link">Customer Service</a></li>
+                                <li class="list-item"><a href="" class="item-link">Contact Us</a></li>
                             </ul>
                         </div>                
                         <div class="footer-column">
-                            <h2 class="footer-column__title">Careers</h2>
-                            <ul class="footer-column__list">
-                                <li class="footer-column__item"><a href="" class="item-link">Culture and Values</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Inclusion, Diversity, and Equity</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">College Achievement Plan</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Alumni Community</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">U.S. Careers</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">International Careers</a></li>
+                            <h2 class="column-title">Careers</h2>
+                            <ul class="column-list">
+                                <li class="list-item"><a href="" class="item-link">Culture and Values</a></li>
+                                <li class="list-item"><a href="" class="item-link">Inclusion, Diversity, and Equity</a></li>
+                                <li class="list-item"><a href="" class="item-link">College Achievement Plan</a></li>
+                                <li class="list-item"><a href="" class="item-link">Alumni Community</a></li>
+                                <li class="list-item"><a href="" class="item-link">U.S. Careers</a></li>
+                                <li class="list-item"><a href="" class="item-link">International Careers</a></li>
                             </ul>
                         </div>                 
                         <div class="footer-column">
-                            <h2 class="footer-column__title">Social Impact</h2>
-                            <ul class="footer-column__list">
-                                <li class="footer-column__item"><a href="" class="item-link">People</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Planet</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Environmental and Social Impact Reporting</a></li>
+                            <h2 class="column-title">Social Impact</h2>
+                            <ul class="column-list">
+                                <li class="list-item"><a href="" class="item-link">People</a></li>
+                                <li class="list-item"><a href="" class="item-link">Planet</a></li>
+                                <li class="list-item"><a href="" class="item-link">Environmental and Social Impact Reporting</a></li>
                             </ul>
                         </div>              
                         <div class="footer-column">
-                            <h2 class="footer-column__title">For Business Partners</h2>
-                            <ul class="footer-column__list">
-                                <li class="footer-column__item"><a href="" class="item-link">Landlord Support Center</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Suppliers</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Corporate Gift Card Sales</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Office and Foodservice Coffee</a></li>
+                            <h2 class="column-title">For Business Partners</h2>
+                            <ul class="column-list">
+                                <li class="list-item"><a href="" class="item-link">Landlord Support Center</a></li>
+                                <li class="list-item"><a href="" class="item-link">Suppliers</a></li>
+                                <li class="list-item"><a href="" class="item-link">Corporate Gift Card Sales</a></li>
+                                <li class="list-item"><a href="" class="item-link">Office and Foodservice Coffee</a></li>
                             </ul>
                         </div>          
                         <div class="footer-column">
-                            <h2 class="footer-column__title">Order and Pick Up</h2>
-                            <ul class="footer-column__list">
-                                <li class="footer-column__item"><a href="" class="item-link">Order on the App</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Order on the Web</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Delivery</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Order and Pick Up Options</a></li>
-                                <li class="footer-column__item"><a href="" class="item-link">Explore and Find Coffee for Home</a></li>
+                            <h2 class="column-title">Order and Pick Up</h2>
+                            <ul class="column-list">
+                                <li class="list-item"><a href="" class="item-link">Order on the App</a></li>
+                                <li class="list-item"><a href="" class="item-link">Order on the Web</a></li>
+                                <li class="list-item"><a href="" class="item-link">Delivery</a></li>
+                                <li class="list-item"><a href="" class="item-link">Order and Pick Up Options</a></li>
+                                <li class="list-item"><a href="" class="item-link">Explore and Find Coffee for Home</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="line-break"></div>
-                <ul class="footer__social-links">
+                <hr class="line-break"></hr>
+                <ul class="footer__social-links flex">
                     <li class="social-icon"><a href="" class="item-link">
                         <svg aria-hidden="true" class="valign-middle absoluteCenter" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M12,0 C18.6274131,0 24,5.37261901 24,12.0000716 C24,18.627381 18.6274131,24 12,24 C5.37258694,24 0,18.627381 0,12.0000716 C0,5.37261901 5.37258694,0 12,0 Z M11.0669976,14 C9.95068692,14.0009568 8.6027256,14.1878544 7.49869423,14.4956294 C7.1391459,14.5957759 6.94143571,14.9349663 7.01538732,15.323911 C7.08630361,15.6969088 7.39839046,15.9206437 7.74883281,15.8300653 C8.54008748,15.6259451 9.33810265,15.4781174 10.1468794,15.4098647 C11.1130794,15.3282166 12.0741744,15.3684028 13.0286469,15.5672606 C14.1176396,15.7941848 15.1397171,16.2280998 16.0883949,16.8908526 C16.3912378,17.1024678 16.747061,16.996421 16.9174532,16.6588253 C17.0846722,16.3276084 16.9922326,15.9219194 16.6909074,15.7184371 C16.4242125,15.5382372 16.1546202,15.3615456 15.8770258,15.205585 C14.3588102,14.3530642 12.7453957,14.0017542 11.0669976,14 Z M10.1375115,11.0003442 L9.77055252,11.0048078 C8.68426674,11.0479717 7.61755495,11.2034929 6.57584646,11.49243 C6.14064634,11.6131584 5.91075895,11.9889467 6.03234638,12.3691822 C6.15507681,12.7528185 6.57698947,12.9458793 7.02147652,12.8358765 C7.38895345,12.7448397 7.75828776,12.6556341 8.1321941,12.5915421 C9.5848138,12.3422374 11.0434343,12.3367438 12.5037693,12.5345134 C14.0365424,12.7419621 15.4914481,13.1568596 16.8266238,13.8930018 C17.2083883,14.103459 17.6680202,13.9939794 17.8937642,13.6477519 C18.1073637,13.320098 17.9912056,12.8938209 17.614156,12.6938277 C17.2519655,12.5018134 16.8857744,12.313069 16.5065817,12.1523159 C14.6039028,11.3459341 12.5917809,11.001407 10.504792,11.0032382 C10.2600455,11.0032382 10.0148704,10.9949978 9.77055252,11.0048078 Z M11.0635356,7.01538228 C10.2184059,6.97905829 9.3745573,7.0079312 8.53227456,7.09284241 C7.5586031,7.1912587 6.59774312,7.36511712 5.66051317,7.67557859 C5.1689799,7.83857086 4.89609567,8.38560397 5.0370218,8.90997339 C5.18164902,9.44769266 5.68015742,9.75008213 6.17923521,9.59003924 C7.37155569,9.20770594 8.59405429,9.0489049 9.83078786,9.00947629 C11.1386962,8.96771922 12.4379213,9.07187905 13.7249043,9.33685791 C15.0971547,9.61953308 16.4163087,10.0659767 17.6311204,10.8388705 C17.7602315,10.9209876 17.918809,10.947532 18.0638633,11 C18.0668526,10.9917728 18.0701267,10.9835455 18.0732584,10.9753183 C18.1337569,10.9681777 18.195252,10.9664702 18.2544694,10.9528099 C18.6473544,10.8626208 18.9228009,10.5436216 18.9889935,10.1064919 C19.0467875,9.72508998 18.8742597,9.30969253 18.5354676,9.11099719 C18.0779559,8.84244802 17.6178819,8.57219131 17.1390177,8.35455782 C15.1965147,7.47176064 13.154794,7.1054161 11.0635356,7.01538228 Z"></path><circle class="sb-icon-hover" cx="50%" cy="50%" fill="transparent" r="75%"></circle></svg>
                     </a></li>
@@ -247,14 +263,14 @@
                         <svg aria-hidden="true" class="valign-middle absoluteCenter" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M11.9997256,5.63636363e-05 C18.6169281,5.63636363e-05 23.9999455,5.38351336 23.9999455,12.0002762 C23.9999455,18.6170391 18.6169281,24.0000564 11.9997256,24.0000564 C5.38296277,24.0000564 -5.4545455e-05,18.6170391 -5.4545455e-05,12.0002762 C-5.4545455e-05,5.38351336 5.38296277,5.63636363e-05 11.9997256,5.63636363e-05 Z M13.9328526,6.00566601 C13.5495281,6.03127502 13.1735596,6.14210744 12.8335533,6.32472904 C12.4927297,6.50777046 12.1882769,6.76218124 11.946758,7.0690695 C11.6958398,7.38645324 11.5111249,7.7613523 11.4167241,8.15892163 C11.3251839,8.5426369 11.3329485,8.92173415 11.3885264,9.30964762 C11.3971083,9.37388005 11.3913871,9.38269626 11.3349918,9.37388005 C9.19237982,9.04642063 7.41674584,8.25883873 5.9745796,6.57116325 C5.9120544,6.49769479 5.8781355,6.49769479 5.82705282,6.5766209 C5.19607955,7.54808386 5.50216697,9.10897377 6.2904749,9.8759845 C6.39550089,9.9780007 6.50297885,10.0804367 6.61944736,10.1736367 C6.57735523,10.1824529 6.0530426,10.124098 5.58553391,9.8759845 C5.5230087,9.83526198 5.49154177,9.85835207 5.48582051,9.93140071 C5.48009925,10.0363556 5.4890898,10.1329142 5.50298429,10.2471052 C5.62394808,11.2315825 6.28761427,12.1425914 7.19688598,12.497759 C7.3047726,12.544359 7.42410175,12.5855013 7.5401616,12.6056527 C7.33337891,12.6522527 7.12005763,12.6858382 6.52586389,12.6379788 C6.45189617,12.6232851 6.42369853,12.6614887 6.45189617,12.7341175 C6.89856313,13.983921 7.86218682,14.3558813 8.58347427,14.5678903 C8.67991837,14.5851029 8.77677113,14.5851029 8.87362389,14.6086128 C8.86749397,14.617429 8.86218137,14.617429 8.85646011,14.6262452 C8.6169845,15.0007245 7.78740177,15.2799046 7.40121671,15.4184451 C6.69831902,15.6711766 5.93289613,15.784528 5.18994963,15.7093802 C5.07102915,15.691328 5.04650946,15.6925874 5.0142252,15.7093802 C4.98153229,15.7299514 5.01013859,15.758919 5.0481441,15.7908253 C5.19894018,15.8932613 5.35218822,15.9839424 5.50870555,16.0712649 C5.98030086,16.3281946 6.47192058,16.5326468 6.98642534,16.6783243 C9.64190741,17.4319008 12.6333092,16.8781585 14.627577,14.8428722 C16.1935677,13.2446184 16.7424,11.0405645 16.7424,8.833572 C16.7424,8.74708913 16.8417047,8.69964949 16.9009607,8.65388914 C17.3083961,8.33944413 17.632056,7.96328561 17.9356914,7.54304602 C17.9906155,7.46747846 17.9987836,7.39862802 17.9998539,7.35648483 L17.9999455,7.31844244 C17.9999455,7.28317758 18.0043466,7.29367307 17.9512206,7.31844244 C17.5380639,7.5107199 17.0836323,7.62700997 16.6377827,7.70383699 C16.8494693,7.66731267 17.161278,7.27394155 17.2859197,7.11482985 C17.476356,6.87217402 17.634508,6.59551279 17.7231875,6.29660111 C17.7350387,6.27351103 17.7432119,6.24412364 17.7207355,6.22649121 C17.6921292,6.21473626 17.6737395,6.22061374 17.6512631,6.23236869 C17.1535134,6.50609118 16.6390087,6.70508575 16.0914023,6.84572538 C16.0460409,6.85706051 16.0125307,6.84572538 15.9839244,6.81633799 C15.9381543,6.76386052 15.8956535,6.71432179 15.8474315,6.67317945 C15.6173551,6.47166596 15.3705235,6.31381373 15.0918164,6.19752365 C14.7260644,6.04428943 14.3268022,5.97963719 13.9328526,6.00566601 Z"></path><circle class="sb-icon-hover" cx="50%" cy="50%" fill="transparent" r="75%"></circle></svg>
                     </a></li>
                 </ul>
-                <ul class="sb-terms-links">
-                    <li class="term-link"><a href="" class="item-link">Privacy Notice</a></li>
+                <ul class="footer__terms">
+                    <li class="term-link item-no-pb-left"><a href="" class="item-link">Privacy Notice</a></li>
                     <li class="term-link"><a href="" class="item-link">Terms of Use</a></li>
                     <li class="term-link"><a href="" class="item-link">Do Not Share My Personal Information</a></li>
                     <li class="term-link"><a href="" class="item-link">CA Supply Chain Act</a></li>
                     <li class="term-link"><a href="" class="item-link">Cookie Preferences</a></li>
                 </ul>
-                <p class="sb-copyright">&copy; 2023 Starbucks Coffee Company. All rights reserved.</p>
+                <p class="footer__copyright">© 2023 Starbucks Coffee Company. All rights reserved.</p>
             </nav>
         </footer>
     </div>
