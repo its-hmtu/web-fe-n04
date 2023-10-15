@@ -1,6 +1,8 @@
 @import url('./hoangminhtu_css/header.css');
 @import url('./hoangminhtu_css/footer.css');
 @import url('./hoangminhtu_css/general.css');
+@import url('./hoangminhtu_css/back_to_top.css');
+
 * {
     margin: 0;
     padding: 0;
