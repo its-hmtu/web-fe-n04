@@ -222,8 +222,6 @@ ul {
 .sub-nav {
     background-color: rgb(237, 235, 233);
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
     padding: 0px 40px 0px 131px;
     position: sticky;
     top: 0;
@@ -267,7 +265,7 @@ ul {
     width: auto;
     display: none;
 }
-.menu-item-dropdown:hover .menu-item-dropdown-list {
+.sub-item:hover .menu-item-dropdown-list {
     display: block;
 }
 .dropdown-list-item {
