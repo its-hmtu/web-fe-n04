@@ -1,0 +1,167 @@
+@import url('./general.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: "SoDo Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body, h1, h2, h3, h4, h5, h6, span, p {
+    font-family: "SoDo Sans", Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+
+.brand-logo {
+    align-self: center;
+    width: 125px;
+    margin: 0 24px 0 0;
+}
+
+.left-item-relative .drop-down-menu {
+    width: 10vw;
+}
+
+.left-item-relative .drop-down-menu-inner {
+    display: block;
+    padding: 0;
+}
+
+.left-item-relative .list-item {
+    padding: 16px 48px 16px 32px!important;
+}
+
+.left-item-relative .item-link {
+    text-decoration: none;
+}
+
+.left-item-relative .list-item:hover .item-link{
+    color: #00754a!important;
+}
+
+.left-item-relative .item-link:hover {
+    text-decoration: none!important;
+}
+
+.form {
+    position: relative;
+    margin-right: 24px;
+}
+
+.form input {
+    padding: 12px 30px 10px 20px;
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+
+input:focus~.form{
+    border: 2px solid #000;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.item-search {
+    position: absolute;
+    top: 8px;
+}
+
+.item-arrow {
+    position: absolute;
+    right: 0;
+    top: -1;
+    padding: 10px;
+}
+
+.item-region {
+    align-items: center;
+}
+
+.item-region:hover {
+    color: #00754a;
+}
+
+.item-region svg:first-child{
+   margin-right: 8px; 
+}
+
+.progress-bar {
+    background-color: #00754a;
+    height: 4px;
+    width: 100%;
+}
+
+
+.top-topic {
+    background-color: #1e3932;
+}
+
+.top-topic .thumb-art {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 50px 0;
+}
+
+
+.article-header {
+    text-align: center;
+    padding: 70px 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.article-category {
+    margin-bottom: 16px;
+}
+
+.article-category .item-link{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 16px
+}
+
+.top-topic-heading {
+    font-family: 'Lander', serif;
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 3px;
+    padding: 0 10px;
+    margin: 0 auto 30px;
+}
+
+.top-topic-description {
+    max-width: 850px;
+    padding: 0 10px;
+    margin: 0 auto;
+    color: #ffffff8f;
+    font-size: 22px;
+    font-weight: 300;
+}

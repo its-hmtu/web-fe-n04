@@ -20,6 +20,7 @@ var isOpen = false;
 
 hamburgerButton = () => {
     button.click(() => {
+        // Mở menu khi nhấn vào nút menu
         menu.toggleClass('menu-toggle');
         (isOpen) ? menuOpen() : menuClose();
     });
@@ -32,7 +33,9 @@ menuClose = () => {
     sb_middle.toggleClass("hb-mid-OPEN");
     sb_top.toggleClass("hb-top-OPEN");
     sb_bottom.toggleClass("hb-bottom-OPEN");
+
     dropdownMenu.removeClass('more-menu-open');
+
     isOpen = false;
 }
 
@@ -43,14 +46,18 @@ menuOpen = () => {
     sb_middle.toggleClass("hb-mid-OPEN");
     sb_top.toggleClass("hb-top-OPEN");
     sb_bottom.toggleClass("hb-bottom-OPEN");
+    
     isOpen = true;
 }
 
+
 moreMenu = () => {
+    // Mở menu con khi nhấn vào more
     moreButton.click(() => {
         dropdownMenu.addClass('more-menu-open');
     });
 
+    // Đóng menu con khi nhấn vào nút back
     menuBackButton.click(() => {
         dropdownMenu.removeClass('more-menu-open');
     });
