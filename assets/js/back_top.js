@@ -3,6 +3,7 @@ var bacKTopContainer = $('.back-to-top');
 
 // back to top button 
 $(window).scroll(() => {
+    // Hiển thị nút back to top khi cuộn quá 500px
     if ($(this).scrollTop() > 500) {
         bacKTopContainer.css('transform', 'translatex(-20%)');
     } else {
@@ -10,6 +11,7 @@ $(window).scroll(() => {
     }
   });
   
+  // Lắng nghe sự kiện click vào nút quay về đầu trang
   bacKTopButton.click(() => {
     $('html').animate({
       scrollTop: 0
