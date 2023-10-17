@@ -30,6 +30,7 @@ inputField.each(function() {
         }
     });
 });
+
 $('form').submit(function(e) {
    e.preventDefault();
 });

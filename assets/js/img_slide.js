@@ -24,18 +24,11 @@ imgs.forEach((item) => {
   item.addEventListener("click", handleClick);
 });
 
-imgButtons.forEach((item) => {
-  item.removeAttribute('href');
-  item.addEventListener("click", handleClickButton);
-});
-
 function handleClick() {
-  // get current index of clicked image
   currentImg = Array.from(imgs).indexOf(this);
-    // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
   body.toggleClass('overflow-hidden');
-  
+
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
@@ -44,10 +37,13 @@ function handleClick() {
   }
 }
 
+imgButtons.forEach((item) => {
+  item.removeAttribute('href');
+  item.addEventListener("click", handleClickButton);
+});
+
 function handleClickButton() {
-  // get current index of clicked image
   currentImg = Array.from(imgButtons).indexOf(this);
-    // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
   body.toggleClass('overflow-hidden');
   
@@ -109,11 +105,7 @@ function updateSlide() {
   updateArrows();
 }
 
-function updateDots() {
-  dots.forEach((dot) => dot.classList.remove("active"));
-  dots[currentIndex].classList.add("active");
-}
-
+// Cập nhật các phím điều hướng sau mỗi lần chuyển
 function updateArrows() {
   if (currentIndex === 0) {
     leftClick.classList.add("hidden");
@@ -137,6 +129,13 @@ function updateArrows() {
   }
 }
 
+// Cập nhật lại nút sau mỗi lần chuyển 
+function updateDots() {
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[currentIndex].classList.add("active");
+}
+
+// sự kiện của các nút
 dots.forEach((dot) => {
   dot.addEventListener("click", (e) => {
     // Remove active class from all dots
@@ -155,5 +154,6 @@ dots.forEach((dot) => {
     updateSlide();
   });
 });
+
 
 
