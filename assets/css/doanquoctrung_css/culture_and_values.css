@@ -262,19 +262,23 @@ ul {
     position: absolute;
     background-color: #fff  ;
     top: 47px;
-    width: auto;
+    width: 250px;
     display: none;
 }
 .sub-item:hover .menu-item-dropdown-list {
     display: block;
 }
 .dropdown-list-item {
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
-
+.list-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .dropdown-list-item:hover {
-    background-color: gray;
-}
+    background-color: rgb(206, 203, 203);
+}   
 .text-title-head {
     color: rgba(0, 0, 0, 0.87);
     font-size: 14px;
@@ -287,12 +291,13 @@ ul {
 /* main page */
 .main{
     display: flex;
+    background-color: #f9f9f9
 }
 .left-container {
     color: rgba(0, 0, 0, 0.87);
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background-color: rgb(0, 0, 0);
     background-size: 770px 1310px;
     background-image:url(./img/backgroud-img.jpg);
@@ -566,6 +571,10 @@ ul {
     letter-spacing: -0.16px;
     margin-top: 8px;
 }
+.right-container-bottom {
+    background-color: rgb(237, 235, 233);
+    box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.24);
+}
 .right-container-bottom-inner {
     padding: 32px 40px 64px;
 }
@@ -574,6 +583,7 @@ ul {
 }
 .support {
     padding-right: 24px;
+    width: 717.47px;
 }
 .support-content {
     color: rgba(0, 0, 0, 0.87);
@@ -589,31 +599,124 @@ ul {
     font-weight: 400;
     line-height: 21px;
     letter-spacing: -0.16px;
+    width: 646.14px;
+}
+.follow {
+    padding: 0px 24px;
+    width: 358.73px;
+}
+.follow-content {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+}
+.follow-item {
+    display: flex;
+}
+.follow-list-items {
+    padding-top: 8px;
+}
+.follow-list-item {
+    padding-bottom: 8px;
+}
+.follow-item img {
+    width: 15px;
+    height: 15px;
+    margin-right: 16px;
+    margin-top: 2.5px;
+}
+.follow-item-title {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.16px;
+}
+
+.grid-information {
+    margin-top: 48px;
+    padding: 0px 24px 0px 0px;
+    width: 717.47px;
+}
+.information-content {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+}
+.title-link {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.16px;
+}
+.under {
+    margin-top: 21px;
 }
 /*<--->*/
-
+/*footer*/
+.footer__nav-bar {
+    padding: 24px 40px;
+}
+.footer-column-title {
+    margin-bottom: 16px;
+    padding: 8px 0px;
+}
+.footer-column-dropdowm-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-column-dropdowm-title svg {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
+.footer-column-dropdowm-title span {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    letter-spacing: normal;
+}
 .item-link{
     color: #00000094;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: -0.16px;
+    padding: 8px 0px 8px 0px;
+}
+.footer-column:active .footer-column-list-items{
+    display: block;
+}
+
+.footer-column-item {
+    margin-bottom: 24px;
+}
+.footer-column-list-items {
+    display:none;
 }
 
 .line-break{
-    width: 1440px;
+    width: auto;
     border-top: 2px solid rgba(0, 0, 0, .1);
-    margin-left: 209.3px;
     margin-top:32px;
     margin-bottom: 32px;
 }
 
 .footer-social-links{
-    width: 1445px;
+    width: auto;
     height: 51px;
     display: flex;
     align-items: flex-start;
-    margin-left: 209.3px;
+
 }
 .item-social-link{
     width: 44px;
@@ -621,3 +724,28 @@ ul {
     font-size: 16px;
     padding-right: 15px;
 }
+.footer-term-links {
+    margin: 16px 0px 4px 0px;
+}
+.term-link {
+    margin-bottom: 18px;
+}
+.item-term-link {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    padding: 8px 0px;
+}
+.item-term-link:hover {
+    text-decoration: underline;
+}
+.sb-copyright {
+    padding: 16px 0px;
+    color: rgba(0, 0, 0, 0.58);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+/*<--->*/
