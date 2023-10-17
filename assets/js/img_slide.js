@@ -12,11 +12,6 @@ var imgs = document.querySelectorAll('.section-4 img');
 var imgButtons = document.querySelectorAll('.section-4 .item-link');
 var thumbnailContainers = document.querySelectorAll('.slide-item .thumb-nail-container');
 
-console.log(imgs);
-console.log(thumbnailContainers);
-console.log(imgButtons);
-// select body
-
 var currentImg = 0;
 let currentIndex = 0;
 
