@@ -6,7 +6,7 @@
     right: 0px; /* Initial position outside the screen */
     transform: translatex(150%);
     transition: transform 0.2s ease-in-out; /* Smooth transition when changing the right property */
-    z-index: 9;
+    z-index: 2;
 }
 
 .back-to-top .back-top-up-arrow{

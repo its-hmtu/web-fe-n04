@@ -11,6 +11,7 @@ var mask = document.querySelector('.slide-dialog-mask');
 var imgs = document.querySelectorAll('.section-4 img');
 var imgButtons = document.querySelectorAll('.section-4 .item-link');
 var thumbnailContainers = document.querySelectorAll('.slide-item .thumb-nail-container');
+
 console.log(imgs);
 console.log(thumbnailContainers);
 console.log(imgButtons);
@@ -34,6 +35,7 @@ function handleClick() {
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
   body.toggleClass('overflow-hidden');
+  
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
@@ -48,6 +50,7 @@ function handleClickButton() {
     // remove hidden on slideItems with currentImg index
   container.classList.remove('hidden');
   body.toggleClass('overflow-hidden');
+  
   thumbnailContainers[currentImg].classList.remove('hidden');
   if (currentImg === 1) {
     dots[dots.length - 1].classList.add('hidden');
@@ -60,6 +63,7 @@ close.addEventListener("click", () => {
   container.classList.add("hidden");
   // set body overflow to auto
   body.toggleClass('overflow-hidden');
+  
   thumbnailContainers[currentImg].classList.add('hidden');
   currentIndex = 0;
   currentImg = 0;
@@ -69,6 +73,7 @@ close.addEventListener("click", () => {
 mask.addEventListener('click', () => {
     container.classList.add('hidden');
     body.toggleClass('overflow-hidden');
+    
     thumbnailContainers[currentImg].classList.add('hidden');
     currentIndex = 0;
     currentImg = 0;
@@ -78,6 +83,7 @@ mask.addEventListener('click', () => {
 closeOk.addEventListener('click', () => {
     container.classList.add('hidden');
     body.toggleClass('overflow-hidden');
+    
     thumbnailContainers[currentImg].classList.add('hidden');
     currentIndex = 0;
     currentImg = 0;

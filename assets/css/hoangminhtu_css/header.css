@@ -187,6 +187,7 @@ button {
     height: calc(100% - 64px);
     padding-top: 32px;
     transition: right .3s ease-in-out;
+    z-index: 99;
 }
 
 .menu-toggle {
