@@ -37,7 +37,7 @@ ul {
 }
 
 /* header */
-@media screen and (min-width: 1520px){
+@media (min-width: 1520px){
     .nav-bar-inner {
         padding: 0 40px;
         max-width: unset;
@@ -75,20 +75,20 @@ ul {
     bottom: 10px;
 }
 
-@media screen and (min-width: 475px) {
+@media (min-width: 475px) {
     .sub-navbar-item {
         margin-right: 32px; 
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .sub-navbar {
         padding-right: 24px;
         padding-left: 99px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .sub-navbar {
         padding-right: 40px;
         padding-left: 131px;
@@ -103,13 +103,13 @@ ul {
     display: flex;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .content-container {
         padding-left: 99px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .content-container {
         padding-left: 131px;
     }
@@ -143,7 +143,7 @@ ul {
     display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .aside {
         display: block;
         flex-basis: 150px;
@@ -195,7 +195,7 @@ ul {
     font-weight: 400;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .main-content {
         padding-left: 0px;
     }
@@ -219,7 +219,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px){
     .main-content {
         padding: 40px 10% 0px 119px;
     }
@@ -235,19 +235,19 @@ ul {
 }
 
 /* footer */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .footer__nav-bar {
         padding: 0 24px 0 99px;
     } 
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .footer__nav-bar {
         padding: 0 40px 0 131px;
     } 
 }
 
-@media screen and (min-width: 1520px) {
+@media (min-width: 1520px) {
     .footer__nav-bar {
         padding: 0 40px 0 131px;
         max-width: unset;
@@ -320,14 +320,14 @@ ul {
     
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .drawer-container {
         padding-left: 99px;
         height: 94px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .drawer-container {
         padding-left: 400px;
         padding-right: 10%;
@@ -363,7 +363,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .drawer-container {
         padding-right: 20%;
     }

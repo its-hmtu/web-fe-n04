@@ -43,7 +43,7 @@ ul {
 }
 
 /* Header */
-@media screen and (min-width: 1520px){
+@media (min-width: 1520px){
     .brand-logo {
         position: absolute;
         right: 100%;
@@ -94,7 +94,7 @@ ul {
     background-color: rgba(0, 0, 0, .2)
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .sub-navbar {
         padding: 0 24px 0 99px;
     }
@@ -108,13 +108,13 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .sub-navbar {
         padding: 0 40px 0 131px
     }
 }
 
-@media screen and (min-width: 1520px) {
+@media (min-width: 1520px) {
     .sub-navbar {
         padding: 0;
     }
@@ -213,13 +213,13 @@ ul {
     display: none;
 }
 
-@media screen and (min-width: 375px){
+@media (min-width: 375px){
     .section-title {
         font-size: 24px;
     }
 }
 
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .section {
         margin: 64px 0;
     }
@@ -283,13 +283,13 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .section-inner {
         padding: 0 40px;
     }
 }
 
-@media screen and (min-width: 1520px) {
+@media (min-width: 1520px) {
     .section-inner:not(:first-child) {
         padding: 0;
         max-width: 1440px;
@@ -311,15 +311,15 @@ ul {
     display: flex;
 }
 
-.clearfix::after {
+/* .clearfix::after {
     clear: both;
     content: "";
     display: block;
-}
+} */
 
 .float-left {
-    padding-bottom: 133.333%;
-    float: left;
+    padding-bottom: 133%;
+    /* float: left; */
     width: 0;
 }
 
@@ -371,7 +371,7 @@ ul {
     color:#000000de;
 }
 
-@media screen and (min-width: 375px) {
+@media (min-width: 375px) {
     .section-1 .section-title {
         font-weight: 600;
         font-size: 28px;
@@ -379,7 +379,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .section-1 .section-inner__background {
         background-color: #d4e9e2;
         background-image: url(./img/background-img-768.webp);
@@ -393,7 +393,7 @@ ul {
     }
 
     .float-left {
-        padding-bottom: 56.25%;
+        padding-bottom: 56%;
     }
 
     .section-1 .section-inner__text {
@@ -438,7 +438,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .section-1 .text-content {
         padding: 32px 40px;
     }
@@ -458,7 +458,7 @@ ul {
     display: none;
 }
 
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .section-2 .mobile-res-title, .section-2 .mobile-res-description {
         display: none;
     }
@@ -535,7 +535,7 @@ ul {
     right: 0;
     opacity: 0;
     visibility: hidden;
-    animation: fadeOut .2s ease-out;
+    animation: fadeOut .5s ease-out;
 }
 
 .thumb-nail-visible {
@@ -585,7 +585,7 @@ ul {
     padding: 0 16px;
 }
 
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .section-3 .thumb-nail-container__inner {
         padding-bottom: 0px;
     }
@@ -694,7 +694,7 @@ ul {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .section-5 .grid-item-thumb-nail {
         display: flex;
     }
@@ -744,7 +744,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .section-5 .grid-item {
         display: flex;
     }
@@ -767,7 +767,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1520px) {
+@media (min-width: 1520px) {
     .section-5 .thumb-nail-column {
         max-width: 1440px;
         margin: 0 auto;
@@ -831,7 +831,7 @@ ul {
     margin: 24px 0 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .section-6 .section-inner__text {
         flex-direction: row;
         align-items: center;
@@ -931,7 +931,7 @@ ul {
     padding-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .grid-column {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 32px;
@@ -953,7 +953,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1520px) {
+@media (min-width: 1520px) {
     .section-8 .section-inner__text {
         max-width: 1440px;
         margin: 0 auto;
@@ -1085,7 +1085,7 @@ ul {
     transform: scale(.65);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .slide-dialog-container {
         margin: 0 auto;
     }

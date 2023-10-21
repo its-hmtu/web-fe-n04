@@ -37,7 +37,7 @@ ul {
 }
 
 /* Header */
-@media screen and (min-width: 1702px) {
+@media (min-width: 1702px) {
     .brand-logo {
         position: absolute;
         right: 100%;
@@ -131,7 +131,7 @@ ul {
     border-color: #1e3932;
 }
 
-@media screen and (min-width: 375px) {
+@media (min-width: 375px) {
     .banner-title {
         font-size: 28px;
     }
@@ -149,7 +149,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .banner-flex {
         display: flex;
     }
@@ -180,7 +180,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .banner-text-content {
         padding: 32px 40px;
     }
@@ -190,7 +190,7 @@ ul {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .banner-text-content {
         padding: 32px 48px;
     }

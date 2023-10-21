@@ -34,7 +34,7 @@
     background-color: #006241;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .back-to-top .item-bp::before {
         content: 'Back to top';
     } 
